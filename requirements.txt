@@ -1,0 +1,12 @@
+# Pinned to the environment this pipeline was developed/verified in
+# (Python 3.12.3). geopandas/pyarrow/shapely are used ONLY by
+# data_fetch.py (one-time); run_all.py needs the rest.
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+geopandas==1.2.0
+pyarrow==25.0.1
+shapely==2.1.2
+pytest==9.1.1
