@@ -1,123 +1,96 @@
-# ZIP Demand Model — spatial econometrics + GeoAI + game theory
+# ZIP Demand Model — spatial econometrics + GeoAI under extreme sparse sampling
 
-A three-layer model of product demand by ZCTA, built as the Phase 2
-analysis machinery for the Wizemode Shops Phase 0 slate:
-
-1. **Layer 1 — spatial econometrics.** Market-potential allocation,
-   OLS / spatial lag / spatial error / spatial Durbin models (ML,
-   hand-implemented with numpy/scipy — spreg is not installed here),
-   Moran's I diagnostics, and a Fay–Herriot small-area layer giving
-   every ZCTA an estimate with a 95% interval.
-2. **Layer 2 — GeoAI estimation.** Gradient-boosting demand and
-   funnel-uptake models with quantile intervals, leakage-safe spatial
-   features (neighbor covariates and neighbor *model predictions* —
-   never neighbor outcomes), permutation importance, and k-means
-   ZIP clusters with a geographic-coherence check.
-3. **Layer 3 — geospatial game theory.** A Huff-model contest against
-   an aggregate incumbent for the top-25 ZIPs per region, Monte Carlo
-   over three competitor response strategies, payoff bands, win rates,
-   and printed decision rules — plus one narrated showcase
-   play-through.
+Code for the manuscript **"Going blind at 8 percent: the behavior of
+spatial econometrics and GeoAI under extreme sparse sampling"**
+(submitted to *Geographical Analysis*). The paper is a validation /
+pathology study: it takes a three-layer ZIP/ZCTA demand-estimation
+pipeline — spatial econometrics with a Fay–Herriot small-area layer,
+a GeoAI (gradient-boosting) layer, and a game-theoretic decision
+layer — and stress-tests how each part behaves when it is fitted to
+only ~8% of areas and graded against the truth everywhere else.
 
 ## The honest part (read first)
 
-**There is no real ZIP-level outcome data yet.** Phase 0 will
-generate it. Until then the pipeline validates itself by
-*simulation recovery*: it simulates a known true demand surface
-(`config.DGP`), draws a Phase 0-style sample (~8% of ZCTAs) from it,
-fits everything to the sample alone, and grades the recovery against
-the truth on all ZCTAs. Every output is stamped accordingly
-(`data_basis = simulated_sample`). The models are the deliverable;
-the numbers demonstrate the machinery, not the market.
+**There is no real ZIP-level outcome data in Tier 1.** The Tier 1
+pipeline validates itself by *simulation recovery*: it simulates a
+known true demand surface (`config.DGP`), draws a Phase 0-style
+sample (~8% of ZCTAs) from it, fits everything to the sample alone,
+and grades the recovery against the truth on all ZCTAs. Every Tier 1
+output is stamped accordingly (`data_basis = simulated_sample`). The
+models are the deliverable; the numbers demonstrate the machinery,
+not the market.
+
+**Tier 2 is the empirical counterpart.** The same machinery
+(Fay–Herriot vs. GeoAI) is benchmarked on *observed* economic mass —
+Census ZIP Code Business Patterns (2022 and 2019) and IRS SOI ZIP
+Code data (TY2022) — as a machinery benchmark, not a market
+validation. Tier 2 data are free public downloads; `fetch_data.py`
+retrieves them (they are not redistributed here).
+
+## Layout
+
+- **Tier 1 (repo root)** — the pipeline:
+  1. `layer1_econometrics.py` — market-potential allocation; OLS /
+     spatial lag / spatial error / spatial Durbin models (ML,
+     hand-implemented with numpy/scipy); Moran's I; Fay–Herriot
+     small-area estimates with 95% intervals.
+  2. `layer2_geoai.py` — gradient-boosting demand and uptake models
+     with quantile intervals, leakage-safe spatial features
+     (neighbor covariates and neighbor *model predictions* — never
+     neighbor outcomes), permutation importance, k-means clustering
+     with a geographic-coherence check.
+  3. `layer3_game.py` — Huff-model contest against an aggregate
+     incumbent, Monte Carlo competitor responses, payoff bands and
+     decision rules.
+  Supporting: `common.py`, `config.py` (all parameters + the single
+  seed), `data_fetch.py`, `figures.py`, `report.py`, `tests/`.
+- **`strengthening/`** — the 2026-10 strengthening analyses behind
+  the *Geographical Analysis* submission:
+  - `fetch_data.py` — one-time download of the Tier 2 data (Census
+    ZBP 2022 + 2019; IRS SOI TY2022).
+  - `benchmark.py` — Tier 2 benchmark (FH vs. GeoAI on observed
+    economic mass, incl. the 2019→2022 temporal transfer).
+  - `tier2_draws.py` — the Tier 2 comparison rerun over 24 sample
+    draws (the paper's transportability check).
+  - `diagnostics_full.py` + `lm_tests.py` — full-data Moran's I and
+    robust LM lag/error diagnostics (the corrected v3 diagnostics:
+    genuine full-data tests, n ≈ 5,500 areas).
+  - `roughness.py` — the surface-roughness stress test (tested; the
+    roughness explanation was NOT supported — reported as an
+    untested hypothesis in the paper).
+  - `calibration.py` — replicate calibration of the Tier 1 design
+    (seeds 20261013 + 1000·r, R = 24, B = 25).
+  - `figures_strengthening.py`, `figures_v3.py` — the paper's
+    figures (v3 set; Fig. 6 panel labels and Fig. 7 legend fixed in
+    v4.1).
+  - `results/` — saved outputs, including per-unit predictions
+    (`benchmark_predictions.csv`, one row per graded ZCTA).
+  - `Design_note_2026-10-18.md` — the design note stating the
+    strengthening questions in advance (2026-10-18).
 
 ## Run it
 
 ```bash
+pip install -r requirements.txt
+
+# Tier 1 (simulation recovery; deterministic — config.SEED is the
+# single randomness source)
 python data_fetch.py     # ONE time: downloads + caches data/ (network)
 python run_all.py        # simulation-recovery mode (cached data only)
 python run_all.py --real # once data/real_outcomes.csv exists
 python -m pytest tests/ -q
+
+# Tier 2 (empirical benchmark)
+pip install -r strengthening/requirements.txt
+cd strengthening
+python fetch_data.py          # once: downloads the free Tier 2 data
+python run_strengthening.py   # benchmark + calibration + figures
+python run_v3.py              # full v3 pass: full-data diagnostics,
+                              # 24-draw Tier 2, roughness, v3 figures
 ```
 
-`run_all.py` is deterministic: `config.SEED` is the single
-randomness source and the call order is fixed, so reruns reproduce
-`results/` byte-identically (the determinism test in tests/ pins the
-simulator's output hash).
-
-## Feeding it real data
+## Feeding Tier 1 real data
 
 Replace the simulated sample with a CSV at `data/real_outcomes.csv`,
-one row per tested ZCTA per product, columns exactly:
-
-`zcta, product, sessions, add_to_carts, orders, exposure_days`
-
-`product` is `steamers` or `trio`; orders are annualized by
-`exposure_days` inside the pipeline. Then `python run_all.py --real`
-— every estimator, figure, and output regenerates; DGP/recovery
-content drops out and `data_basis` becomes `real_outcomes`.
-
-## Data sources & vintages
-
-- **ACS 5-year 2023** ZCTA-level estimates from the Census Bureau's
-  official table-based summary files on www2.census.gov (the Census
-  API requires a key; same workaround as
-  `~/workspace/video-factory/pipeline/receptivity.py`). Tables:
-  B01002, B01003, B19001, B19013, B25001, B25003, B25004, B25010,
-  B25024. ZCTA rows carry summary level 860 (GEO_ID `860Z200US…`).
-- **2023 ZCTA Gazetteer** — centroids + land area.
-- **Cartographic boundaries** — states/counties 2023 500k (region
-  assignment), ZCTA polygons 2020 500k (maps). ZCTAs are a
-  2020-vintage geography. Region assignment is centroid-in-polygon
-  with a nearest-polygon fallback (counts printed by data_fetch).
-- Study set: ZCTAs with population ≥ 500 and households ≥ 200 —
-  5,057 Southeast (TN NC SC GA FL AL VA KY) + 519 NYC metro (five
-  boroughs + Nassau, Suffolk, Westchester, Hudson, Bergen, Essex).
-
-## Feature dictionary (data/features.csv)
-
-| column | source | meaning |
-|---|---|---|
-| population | B01003_E001 | total population |
-| households | B25003_E001 | occupied housing units |
-| median_hh_income | B19013_E001 | median household income |
-| share_income_100k | B19001 | share of HHs with income ≥ $100k |
-| renter_share | B25003 | renter-occupied / occupied |
-| seasonal_share | B25004_E006 / B25001 | seasonal-vacant share |
-| pct_single_family | B25024 | 1-unit structures / all structures |
-| pct_large_building | B25024 | 20+-unit structures / all |
-| avg_hh_size | B25010_E001 | average household size |
-| median_age | B01002_E001 | median age |
-| pop_density | derived | population / land sq mi (gazetteer) |
-
-Model features add `log_income` and `log_density` (see
-`common.FEATURES`). Missing ACS cells (54 ZCTAs lack a median income)
-are median-imputed within region and counted in the run log.
-
-## Outputs
-
-- `results/zip_scores.csv` — one row per ZCTA: cluster, potential
-  spend, Layer 1 estimate + interval, Layer 2 prediction + interval,
-  uptake score, game-theory columns (shortlist only).
-- `results/RESULTS.md` — methods, DGP truth, model comparison,
-  recovery metrics, cluster summaries, showcase play-through, and
-  the real-vs-simulated accounting.
-- `results/figures/` — NYC + Southeast choropleths, showcase payoff
-  distribution, Layer 1 vs Layer 2 agreement scatter.
-- Audit artifacts: `results/observed_sample.csv`,
-  `results/grading_truth.csv` (simulation mode only),
-  `results/cluster_summaries.csv`, `results/game_shortlist.csv`,
-  `results/model_metrics.json`.
-
-## Known simplifications
-
-- Spatial ML models are fit on the sample's own kNN graph (k=6);
-  in-population prediction for SAR/SDM uses the full-graph reduced
-  form. Coefficient covariances for SAR/SDM are the standard
-  transformed-OLS approximation, not the full ML Hessian.
-- Layer 3's incumbent is an ACS-covariate proxy index, not POI data;
-  response probabilities are a parameterized logistic assumption.
-- The Fay–Herriot sampling variances come from a joint ML fit
-  (NegBin size + lognormal area-effect variance, Gauss–Hermite
-  quadrature) on the sample counts — never from the DGP's true size,
-  and not from plug-in moments (which confound the two variance
-  components; see layer1_econometrics.fay_herriot).
+one row per tested ZCTA per product, columns exactly as specified in
+`data_fetch.py` / `config.py`.

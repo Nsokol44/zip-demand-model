@@ -1,0 +1,233 @@
+{
+  "sample_size_canonical": 447,
+  "n_zctas": 5576,
+  "outcomes": {
+    "zbp22_establishments": {
+      "n_graded": 5066,
+      "ols": {
+        "rmse": 0.5129189751037513,
+        "mae": 0.38880908931041924,
+        "spearman": 0.6115835254544231,
+        "top_decile_overlap": 0.4161735700197239
+      },
+      "best_spatial": {
+        "rmse": 0.512199021413855,
+        "mae": 0.387699342696945,
+        "spearman": 0.6137198961445084,
+        "top_decile_overlap": 0.4161735700197239
+      },
+      "fay_herriot": {
+        "rmse": 0.512199021413855,
+        "mae": 0.387699342696945,
+        "spearman": 0.6137198961445084,
+        "top_decile_overlap": 0.4161735700197239
+      },
+      "geoai": {
+        "rmse": 0.5060492111218788,
+        "mae": 0.38378510926504195,
+        "spearman": 0.6470487705428979,
+        "top_decile_overlap": 0.46153846153846156
+      },
+      "agreement_fh_vs_geoai": {
+        "pearson": 0.7862552250593157,
+        "spearman": 0.7916807517913292,
+        "top_decile_overlap": 0.5029585798816568
+      },
+      "fh_interval_behaviour": {
+        "coverage_vs_observed_nominal95": 0.8365574417686538,
+        "mean_width_log": 1.3423236021402354
+      },
+      "n_with_outcome": 5502,
+      "n_fit": 436,
+      "n_zero_counts": 0,
+      "best_model": "SEM",
+      "aic": {
+        "OLS": 650.1422888987851,
+        "SAR": 642.0026732000433,
+        "SEM": 633.7068287432166,
+        "SDM": 645.9907072552211
+      },
+      "nb_size_hat": 8.746087392036127,
+      "sigma2_u": 0.11156497185813474,
+      "gamma_mean": 0.46343968000532515,
+      "gbm_val_rmse_sample_holdout": 0.4341347105184279,
+      "moran_i": 0.2995720636530819,
+      "moran_p": 0.005,
+      "lm": {
+        "lm_error": 8.216963818951204,
+        "lm_error_p": 0.004150057814154961,
+        "lm_lag": 0.023071531773332172,
+        "lm_lag_p": 0.8792712039573332,
+        "robust_lm_error": 8.547481521023483,
+        "robust_lm_error_p": 0.003460005944974349,
+        "robust_lm_lag": 0.35358923384561514,
+        "robust_lm_lag_p": 0.5520883502797514
+      }
+    },
+    "soi22_returns": {
+      "n_graded": 5070,
+      "ols": {
+        "rmse": 0.21199035264353516,
+        "mae": 0.14799649369832543,
+        "spearman": 0.6023789000897586,
+        "top_decile_overlap": 0.48520710059171596
+      },
+      "best_spatial": {
+        "rmse": 0.21190483169247515,
+        "mae": 0.14852434634592376,
+        "spearman": 0.5982190810580206,
+        "top_decile_overlap": 0.47337278106508873
+      },
+      "fay_herriot": {
+        "rmse": 0.21190483169247515,
+        "mae": 0.14852434634592376,
+        "spearman": 0.5982190810580206,
+        "top_decile_overlap": 0.47337278106508873
+      },
+      "geoai": {
+        "rmse": 0.20407994309793726,
+        "mae": 0.14735275469770115,
+        "spearman": 0.6068446939650115,
+        "top_decile_overlap": 0.504930966469428
+      },
+      "agreement_fh_vs_geoai": {
+        "pearson": 0.7932906551828587,
+        "spearman": 0.7552107576445868,
+        "top_decile_overlap": 0.5660749506903353
+      },
+      "fh_interval_behaviour": {
+        "coverage_vs_observed_nominal95": 0.8654832347140039,
+        "mean_width_log": 0.5679005097047196
+      },
+      "n_with_outcome": 5511,
+      "n_fit": 441,
+      "n_zero_counts": 0,
+      "best_model": "SEM",
+      "aic": {
+        "OLS": -99.39694774046573,
+        "SAR": -111.0331305612116,
+        "SEM": -119.15248628818358,
+        "SDM": -108.66641725914434
+      },
+      "nb_size_hat": 27.11113727092062,
+      "sigma2_u": 0.02,
+      "gamma_mean": 0.34046908507871754,
+      "gbm_val_rmse_sample_holdout": 0.21565843173162824,
+      "moran_i": 0.3698126078854558,
+      "moran_p": 0.001,
+      "lm": {
+        "lm_error": 12.96948051547296,
+        "lm_error_p": 0.00031660985787870165,
+        "lm_lag": 3.624362108260375,
+        "lm_lag_p": 0.05693939599982966,
+        "robust_lm_error": 10.115442542383828,
+        "robust_lm_error_p": 0.0014703212470469679,
+        "robust_lm_lag": 0.770324135171244,
+        "robust_lm_lag_p": 0.3801167971963262
+      }
+    },
+    "soi22_business_returns": {
+      "n_graded": 5070,
+      "ols": {
+        "rmse": 0.7553542030295084,
+        "mae": 0.40805900753923496,
+        "spearman": 0.46531221528400796,
+        "top_decile_overlap": 0.46942800788954636
+      },
+      "best_spatial": {
+        "rmse": 0.7557653300730919,
+        "mae": 0.40922370959674537,
+        "spearman": 0.46297870079930203,
+        "top_decile_overlap": 0.4536489151873767
+      },
+      "fay_herriot": {
+        "rmse": 0.7557653300730919,
+        "mae": 0.40922370959674537,
+        "spearman": 0.46297870079930203,
+        "top_decile_overlap": 0.4536489151873767
+      },
+      "geoai": {
+        "rmse": 0.7362970976109819,
+        "mae": 0.4088984504946513,
+        "spearman": 0.5169650250722426,
+        "top_decile_overlap": 0.5266272189349113
+      },
+      "agreement_fh_vs_geoai": {
+        "pearson": 0.6564181168422536,
+        "spearman": 0.6294309084885926,
+        "top_decile_overlap": 0.52465483234714
+      },
+      "fh_interval_behaviour": {
+        "coverage_vs_observed_nominal95": 0.9347140039447732,
+        "mean_width_log": 1.7929046268526212
+      },
+      "n_with_outcome": 5511,
+      "n_fit": 441,
+      "n_zero_counts": 139,
+      "best_model": "SEM",
+      "aic": {
+        "OLS": 839.4230386414732,
+        "SAR": 830.8225403023457,
+        "SEM": 827.0797153214834,
+        "SDM": 836.3270146261823
+      },
+      "nb_size_hat": 6.331715051175647,
+      "sigma2_u": 0.20085423057827276,
+      "gamma_mean": 0.5475949539926034,
+      "gbm_val_rmse_sample_holdout": 0.5552089225930276,
+      "moran_i": 0.21332345865344526,
+      "moran_p": 0.034,
+      "lm": {
+        "lm_error": 4.315552329386481,
+        "lm_error_p": 0.03776550921344657,
+        "lm_lag": 0.4934704562472196,
+        "lm_lag_p": 0.4823832842306408,
+        "robust_lm_error": 3.824838485755839,
+        "robust_lm_error_p": 0.050498214667495434,
+        "robust_lm_lag": 0.00275661261657839,
+        "robust_lm_lag_p": 0.9581275437345594
+      }
+    }
+  },
+  "temporal_transfer_zbp19_to_zbp22": {
+    "n_graded": 5066,
+    "ols": {
+      "rmse": 0.5158384076615496,
+      "mae": 0.3924731237910147,
+      "spearman": 0.6129573814981257,
+      "top_decile_overlap": 0.40039447731755423
+    },
+    "best_spatial": {
+      "rmse": 0.515798280417714,
+      "mae": 0.39218920023094594,
+      "spearman": 0.6141621792881408,
+      "top_decile_overlap": 0.39644970414201186
+    },
+    "fay_herriot": {
+      "rmse": 0.515798280417714,
+      "mae": 0.39218920023094594,
+      "spearman": 0.6141621792881408,
+      "top_decile_overlap": 0.39644970414201186
+    },
+    "geoai": {
+      "rmse": 0.507424307218186,
+      "mae": 0.38183894684366576,
+      "spearman": 0.6426405132475247,
+      "top_decile_overlap": 0.4635108481262327
+    },
+    "agreement_fh_vs_geoai": {
+      "pearson": 0.7673879943128866,
+      "spearman": 0.771958501341153,
+      "top_decile_overlap": 0.4812623274161736
+    },
+    "fh_interval_behaviour": {
+      "coverage_vs_observed_nominal95": 0.8754441373864982,
+      "mean_width_log": 1.4929083089514392
+    },
+    "fit_outcome": "zbp19_establishments",
+    "grade_outcome": "zbp22_establishments",
+    "best_model": "SEM",
+    "nb_size_hat": 10.410413378814965,
+    "sigma2_u": 0.13905932314865735
+  }
+}

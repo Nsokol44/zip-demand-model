@@ -65,9 +65,9 @@ def make_figures(df, layer2, layer3):
                 edgecolor="white", linewidth=0.3)
         ax.axvline(0, color="red", linewidth=1.2)
         ax.axvline(np.quantile(sc["payoff_draws"], 0.10),
-                   color="black", linestyle="--", linewidth=0.9)
+                   color="black", linestyle=(0, (6, 3)), linewidth=0.9)
         ax.axvline(np.quantile(sc["payoff_draws"], 0.90),
-                   color="black", linestyle="--", linewidth=0.9)
+                   color="black", linestyle=(0, (6, 3)), linewidth=0.9)
         ax.set_xlabel("one-year payoff ($)")
         ax.set_ylabel("Monte Carlo draws (of 500)")
         ax.set_title(f"Showcase play-through — ZIP {sc['zcta']} "

@@ -1,0 +1,59 @@
+{
+  "design": "OLS on all ZCTAs with observed outcome; residuals over the full frame; pipeline Moran permutation (999) and LM tests on the full weights graph.",
+  "outcomes": {
+    "zbp22_establishments": {
+      "label": "zbp22_establishments",
+      "n": 5502,
+      "moran_i": 0.1480717535424123,
+      "moran_p": 0.001,
+      "moran_permutations": 999,
+      "lm": {
+        "lm_error": 392.28469668904523,
+        "lm_error_p": 2.6332961426299198e-87,
+        "lm_lag": 338.82565271413887,
+        "lm_lag_p": 1.1498040335119614e-75,
+        "robust_lm_error": 57.066444616405455,
+        "robust_lm_error_p": 4.213335306040209e-14,
+        "robust_lm_lag": 3.607400641499136,
+        "robust_lm_lag_p": 0.05752296207945263
+      },
+      "lm_seconds": 11.813212871551514
+    },
+    "soi22_returns": {
+      "label": "soi22_returns",
+      "n": 5511,
+      "moran_i": 0.22866120863870648,
+      "moran_p": 0.001,
+      "moran_permutations": 999,
+      "lm": {
+        "lm_error": 941.4626669426467,
+        "lm_error_p": 9.518266171625293e-207,
+        "lm_lag": 998.4330564157724,
+        "lm_lag_p": 3.9342614549168445e-219,
+        "robust_lm_error": 95.22079164121166,
+        "robust_lm_error_p": 1.7029230673122244e-22,
+        "robust_lm_lag": 152.1911811143373,
+        "robust_lm_lag_p": 5.754956610168918e-35
+      },
+      "lm_seconds": 10.592261552810669
+    },
+    "soi22_business_returns": {
+      "label": "soi22_business_returns",
+      "n": 5511,
+      "moran_i": 0.2181078708305433,
+      "moran_p": 0.001,
+      "moran_permutations": 999,
+      "lm": {
+        "lm_error": 856.5659175525332,
+        "lm_error_p": 2.717242695408521e-188,
+        "lm_lag": 967.4408030785595,
+        "lm_lag_p": 2.1457490666305785e-212,
+        "robust_lm_error": 0.013638035836395307,
+        "robust_lm_error_p": 0.9070328069986077,
+        "robust_lm_lag": 110.88852356186264,
+        "robust_lm_lag_p": 6.25933108649131e-26
+      },
+      "lm_seconds": 8.438355922698975
+    }
+  }
+}

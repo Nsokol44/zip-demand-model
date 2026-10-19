@@ -1,0 +1,6 @@
+# Strengthening (Tier 2) code: everything in the repo-root
+# requirements.txt, plus these figure-only dependencies
+# (per code/run_strengthening.py, installed 2026-10-18).
+-r ../requirements.txt
+mapclassify==2.11.0
+colorcet==3.2.1
