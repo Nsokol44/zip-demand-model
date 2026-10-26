@@ -561,9 +561,9 @@ duplicated here. Nothing has been submitted. Submission remains the author's act
 
 The Bayesian arm of Test A (the one Phase 2 item that was outstanding) is
 complete. Draws 0–9 were fitted on the project VM; draws 10–23 were fitted by
-the author locally under the identical shipped protocol and returned as
+the author himself, who ran them and returned them by upload on 2026-10-26 as
 `test_a_bayes.json` plus `ecra_bayes_test_a_results.zip` (fit files, grading
-files, predictions). Verification before integration, all programmatic: the
+files, predictions), under the identical shipped protocol. Verification before integration, all programmatic: the
 returned JSON strict-parses and covers all 24 draws; every one of its 24
 records matches its per-draw fit file and grading file exactly on all nine
 reported fields; the summary means recompute exactly from the records (the
@@ -575,7 +575,7 @@ parameterisation string), and each fit's convergence flag is consistent with
 its gated R-hat (at most 1.01) and ESS values; one prediction file's array
 archive matches its CSV exactly, and the no-ZBP-record count (74) matches the
 feasibility memo. No discrepancy was found. The one surface difference is
-runtime (43–99 s per draw locally against 363–722 s on the contended VM);
+runtime (43–99 s per draw in the author's run against 363–722 s on the contended VM);
 the protocol markers above are the evidence it is the same computation.
 Integrated 57 files (14 draws x fit, arrays, grading, prediction, plus the
 summary JSON) sit alongside the stored draws in `ijec-adaptation/results/`,
@@ -658,3 +658,77 @@ The GitHub repository copy of the strengthening materials is not updated
 by this pass; the integrated results and verdicts live in the local build
 tree and this Drive folder. Nothing has been submitted. Submission remains
 the author's act.
+
+## Strengthening completion verification (2026-10-26, post-build audit)
+
+The strengthening build (manuscript_ecra.md edited 19:08, DOCX/PDF rebuilt 19:09–19:11 and uploaded to Drive 19:12–19:14Z) integrated all of Tests A–D, the Tier 1 4%/16% simulation tier, the AML candidates with Li and Lahiri [90] and Yoshimori and Lahiri [91], the simulated second wave, and the Test A Bayesian e-shop evaluation. Verified in this audit against the delivered records (strengthening/results/test_a_bayes_verdicts.json, MEMO_TEST_A/B/C/D): Section 5.7 fifth evaluation (GeoAI 0.944 ± 0.009, FH 1.012 ± 0.013, 24/24, margin 0.068 ± 0.012), Section 6 Bayesian paragraph (RMSE 1.969, Spearman −0.033, interval behaviour 0.495 at ~3.4x width, convergence 6/24) and its Appendix A.1 cross-reference, Section 8 transport verdict (Q1 yes, Q2 no in 24/24, Q3 width-bought, C3 not assessable), abstract and highlights and cover letter all consistent with the same numbers. Test A reported as found, including the null rank signal and the 25% convergence share; Tier 1 / Tier 2 fencing intact throughout.
+
+Gates re-run on the final files: abstract 199 words; citation closure 97 references, 97 cited, 0 orphans, 0 uncited; em dashes zero except two inside reference [86]'s title (original punctuation retained per house rule); GAP FOUND AND FIXED: the rebuild's styles.xml still carried template theme colours and themeColor attributes (document body text was already black). All 12 DOCX re-finalized with code/finalize_docx.py (every w:color 000000 in styles and document, themeColor stripped, creators blank anonymised / Nicholas J. Sokol identified) and all five PDFs rebuilt from the finalized formatted DOCX (anonymised manuscript 41 pp, identified 42 pp, cover letter 3 pp, highlights 1 p, title page 2 pp). Drive state: the finishing build uploaded the formatted DOCX content under both the plain and formatted manuscript names (MD5-verified for the anonymised manuscript); this audit additionally supplied the appendix DOCX pair, the formatted cover-letter and highlights DOCX, and the current highlights markdown. Body length as found: 18,152 words in manuscript_ecra.md including references and end matter (pandoc body count 14,649); the strengthening list's length target is a separate editorial decision and was not imposed by this audit.
+
+## Post-completion checks and corrections (2026-10-26, author's review)
+
+Three items from the author's review of the completed package, each checked
+against the records before any edit.
+
+**1. Availability claim narrowed.** The cover letter stated that "all code
+and replication materials are openly available" in the public repository
+(Nsokol44/zip-demand-model). Checked against the repository itself at head
+3e57096 after the same-day push: `ecra/strengthening/code/` holds all five
+strengthening scripts, `ecra/strengthening/results/` holds every
+machine-readable result (Tests A–D, `test_a_bayes.json`, the verdicts file,
+the integration manifest, the run logs), and `ecra/` holds the four test
+memos, the design note, this file, and the manuscript sources. Two artifact
+classes are NOT in the repository: `test_a_predictions.csv` (about 21 MB,
+over the connector push limit; regenerated by the deposited `s2a_econ.py`,
+its summaries in `test_a_econ.json` and `test_a_bayes.json`) and the binary
+per-draw fit arrays (`.npz`; their contents are fully reported by the JSON
+summaries, and the integration manifest records names, sizes, and SHA-256
+hashes). The exclusions were already documented in the repository's own
+`ecra/strengthening/NOTES.md`, but the unqualified "all" in the cover letter
+overclaimed against them, so the sentence is narrowed in the cover letter,
+the title page, and the manuscript's Data availability section: all code
+and machine-readable results are openly available, the two excluded classes
+are named, and both are stated to be regenerated by the deposited code with
+their names, sizes, and hashes recorded in the deposited integration
+manifest. The corrected files replace the repository copies in the
+follow-up commit of this date.
+
+**2. Bayesian-arm provenance corrected.** The Test A memo and the
+integration manifest described draws 10–23 as fitted "by the author
+locally". The author corrects the record: he ran them himself and returned
+them here by upload. The records agree (the manifest's source files are his
+2026-10-26 uploads, `test_a_bayes.json` and `ecra_bayes_test_a_results.zip`;
+the returned draws' recorded runtimes are 43–99 s against 363–722 s for the
+VM-fitted draws 0–9; and every returned record was verified on integration
+by exact match against its per-draw fit and grading files on all nine
+reported fields). The sentence now reads, in the memo, this file, the
+integration manifest, the verdicts file, and the repository NOTES: draws
+10–23 were run by the author himself and returned by his upload of
+2026-10-26, under the identical shipped protocol, verified on integration
+as recorded above. No number changes.
+
+**3. Memo B / Memo C coverage pair checked: NOT transposed.** The author
+flagged that Memo B gives shipped coverage as 0.885 (steamers) and 0.889
+(trio), while Memo C gives the wave-1 split's coverage as 0.889 and 0.885
+in the same product order. Checked against the source results. Memo B's
+figures are the shipped construction's sampled-area coverage in the wave-1
+design itself: `test_b_aml.json`, tier-1 summary, shipped coverage means
+0.8851 (steamers) and 0.8891 (trio), rounding to 0.885 and 0.889. Memo C's
+figures are a different quantity, M3 in `test_c_wave.json`: the Fay–Herriot
+construction applied to the fresh wave-2 counts (drawn from the same true
+rates) using the wave-1 fitted split (size and tau from the wave-1 joint
+fit), with coverage again against the true log rates; the summary means of
+`M3_cov_wave2_w1split` are 0.8892 (steamers) and 0.8849 (trio), rounding to
+0.889 and 0.885. The two pairs are close because both quantities sit at the
+same under-coverage level (per-draw standard deviations about 0.05), and
+their three-decimal values happen to fall in swapped order. Both memos are
+faithful to their source files; no text was changed. The manuscript's two
+sentences match their respective memos (both sit in Section 5.4: the AML
+stress-test paragraph carries Memo B's pair, the second-wave paragraph
+carries Memo C's pair), verified in the same check.
+
+Documents touched by items 1–2 (cover letter, title page, both manuscript
+builds) were rebuilt from the corrected sources, re-run through the
+Manuscript Preflight checker with text-identical fixes only, re-verified
+for black text, Times New Roman, metadata, and anonymisation, and the
+Drive copies were updated in place with size verification.

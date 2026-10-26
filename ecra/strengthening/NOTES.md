@@ -16,7 +16,7 @@ strengthening program (Tests A–D plus the Bayesian arm of Test A), run
 - `results/` — strict-JSON outputs for Tests A–D, the completed Bayesian arm
   (`test_a_bayes.json`, all 24 draws), the Bayesian verdict computations
   (`test_a_bayes_verdicts.json`), the integration manifest recording the
-  provenance of the locally run draws r10–r23
+  provenance of draws r10–r23, run by the author himself and returned by upload
   (`INTEGRATION_MANIFEST_BAYES_2026-10-26.json`), and the run logs.
 
 ## Not in the GitHub copy

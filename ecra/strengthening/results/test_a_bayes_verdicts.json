@@ -1,7 +1,7 @@
 {
  "evaluation": "zbp22_eshop",
  "draws": 24,
- "source": "test_a_bayes.json (24 draws complete: r0-r9 server-side checkpoints, r10-r23 Nick local run, integrated 2026-10-26)",
+ "source": "test_a_bayes.json (24 draws complete: r0-r9 server-side checkpoints, r10-r23 run by Nicholas J. Sokol himself and uploaded by him, integrated 2026-10-26)",
  "bayesian_arm": {
   "rmse": {
    "mean": 1.968557575653547,

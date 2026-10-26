@@ -1,6 +1,6 @@
 {
- "source_archive": "ecra_bayes_test_a_results.zip (uploaded by Nick 2026-10-26, local run)",
- "source_json": "test_a_bayes.json (uploaded by Nick 2026-10-26; byte-identical to the copy inside the archive)",
+ "source_archive": "ecra_bayes_test_a_results.zip (draws 10-23, run by Nicholas J. Sokol himself and uploaded by him on 2026-10-26)",
+ "source_json": "test_a_bayes.json (uploaded by Nicholas J. Sokol on 2026-10-26; byte-identical to the copy inside the archive)",
  "integrated": "2026-10-26",
  "draws": [
   10,

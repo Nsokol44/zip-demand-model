@@ -48,8 +48,9 @@ unanimous across draws.
 
 `s2a_bayes.py` (the shipped `FitBayes` protocol: BYM2-type prior under the top-300 eigenvector
 approximation, MCMC, convergence gates with one 2,000-tuning re-run, graded on the same 24 draws)
-was run for draws 0–9 on the project VM and for draws 10–23 on the author's machine under the
-identical shipped protocol (4,000 posterior draws per fit; gates at maximum split R-hat ≤ 1.01
+was run for draws 0–9 on the project VM and for draws 10–23 by the author himself, who ran
+them and returned them by upload on 2026-10-26 (`test_a_bayes.json` plus
+`ecra_bayes_test_a_results.zip`), under the identical shipped protocol (4,000 posterior draws per fit; gates at maximum split R-hat ≤ 1.01
 and bulk ESS ≥ 400 on the gated parameters). The returned files were verified before integration:
 every record in `test_a_bayes.json` matches its per-draw fit file and grading file exactly, for
 all 24 draws and all nine reported fields, and the per-draw fits carry the same protocol markers
