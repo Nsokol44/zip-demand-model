@@ -1,0 +1,1274 @@
+{
+ "sampling_fraction": 0.04,
+ "R_replicates": 24,
+ "B_worlds": 25,
+ "master_seed": 20261013,
+ "pooled": {
+  "steamers_fh_cov_raw_sampled": null,
+  "steamers_fh_cov_raw_all": null,
+  "steamers_fh_cov_cal_sampled": null,
+  "steamers_fh_cov_cal_all": null,
+  "trio_fh_cov_raw_sampled": null,
+  "trio_fh_cov_raw_all": null,
+  "trio_fh_cov_cal_sampled": null,
+  "trio_fh_cov_cal_all": null,
+  "steamers_mult": null,
+  "trio_mult": null,
+  "steamers_rmse_fh": null,
+  "steamers_rmse_geoai": null,
+  "trio_rmse_fh": null,
+  "trio_rmse_geoai": null,
+  "moran_reject_share": null,
+  "lm_error_reject_share": null
+ },
+ "records": [
+  {
+   "replicate": 0,
+   "seed": 20261013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 4.428217660017869,
+     "sigma2_u": 0.16129712091928172,
+     "coverage_sampled": 0.9414414414414415,
+     "coverage_all": 0.8640602582496413,
+     "multiplier": 1.2132645373932929,
+     "coverage_sampled_calibrated": 0.9864864864864865,
+     "coverage_all_calibrated": 0.9288020086083214,
+     "bootstrap_world_nominal_coverage": 0.9118918918918919,
+     "moran_i": 0.13803747923812248,
+     "moran_p": 0.442,
+     "lm": {
+      "lm_error": 0.5134644729105492,
+      "lm_error_p": 0.47364294598843004,
+      "lm_lag": 2.3878381422940933,
+      "lm_lag_p": 0.12228262969600978,
+      "robust_lm_error": 0.16928681291383563,
+      "robust_lm_error_p": 0.6807464188549841,
+      "robust_lm_lag": 2.0436604822973794,
+      "robust_lm_lag_p": 0.15284146560265988
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 2.4074866294413693,
+     "sigma2_u": 0.15292178101971113,
+     "coverage_sampled": 0.9099099099099099,
+     "coverage_all": 0.8570659971305595,
+     "multiplier": 1.206871144688633,
+     "coverage_sampled_calibrated": 0.963963963963964,
+     "coverage_all_calibrated": 0.919296987087518,
+     "bootstrap_world_nominal_coverage": 0.9129729729729731,
+     "moran_i": 0.2735110488478593,
+     "moran_p": 0.216,
+     "lm": {
+      "lm_error": 1.4292321402417887,
+      "lm_error_p": 0.23188979447244717,
+      "lm_lag": 0.0009470394585753153,
+      "lm_lag_p": 0.9754497706334299,
+      "robust_lm_error": 1.4799371165671749,
+      "robust_lm_error_p": 0.22378436125734852,
+      "robust_lm_lag": 0.05165201578396118,
+      "robust_lm_lag_p": 0.8202131785446949
+     }
+    }
+   }
+  },
+  {
+   "replicate": 1,
+   "seed": 20262013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 20.115461483176617,
+     "sigma2_u": 0.42298148315827166,
+     "coverage_sampled": 0.8693693693693694,
+     "coverage_all": 0.9791965566714491,
+     "multiplier": 1.043471523943848,
+     "coverage_sampled_calibrated": 0.8738738738738738,
+     "coverage_all_calibrated": 0.9833213773314203,
+     "bootstrap_world_nominal_coverage": 0.9403603603603604,
+     "moran_i": 0.09071413270101915,
+     "moran_p": 0.599,
+     "lm": {
+      "lm_error": 0.24353395793722762,
+      "lm_error_p": 0.6216652746293236,
+      "lm_lag": 0.39601781583571133,
+      "lm_lag_p": 0.5291530219723299,
+      "robust_lm_error": 0.13884394767177408,
+      "robust_lm_error_p": 0.7094330000753278,
+      "robust_lm_lag": 0.2913278055702578,
+      "robust_lm_lag_p": 0.5893708951008616
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 2.6925370671121245,
+     "sigma2_u": 0.17994516056326565,
+     "coverage_sampled": 0.8873873873873874,
+     "coverage_all": 0.8875538020086083,
+     "multiplier": 1.1363824406691105,
+     "coverage_sampled_calibrated": 0.9144144144144144,
+     "coverage_all_calibrated": 0.9253945480631277,
+     "bootstrap_world_nominal_coverage": 0.9230630630630631,
+     "moran_i": -0.2618517395056705,
+     "moran_p": 0.142,
+     "lm": {
+      "lm_error": 2.226622320824651,
+      "lm_error_p": 0.1356501049870073,
+      "lm_lag": 0.07058393945950917,
+      "lm_lag_p": 0.790488455019247,
+      "robust_lm_error": 2.500484032901334,
+      "robust_lm_error_p": 0.11381131370000376,
+      "robust_lm_lag": 0.3444456515361913,
+      "robust_lm_lag_p": 0.5572742792587002
+     }
+    }
+   }
+  },
+  {
+   "replicate": 2,
+   "seed": 20263013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 76.87388202206427,
+     "sigma2_u": 0.4563127119447848,
+     "coverage_sampled": 0.7747747747747747,
+     "coverage_all": 0.9779411764705882,
+     "multiplier": 1.0274442980106546,
+     "coverage_sampled_calibrated": 0.7837837837837838,
+     "coverage_all_calibrated": 0.9804519368723099,
+     "bootstrap_world_nominal_coverage": 0.9452252252252252,
+     "moran_i": -0.1649014041075439,
+     "moran_p": 0.345,
+     "lm": {
+      "lm_error": 0.754787605283365,
+      "lm_error_p": 0.38496466694869735,
+      "lm_lag": 0.6340157090783812,
+      "lm_lag_p": 0.42588614014735027,
+      "robust_lm_error": 1.1473983354285355,
+      "robust_lm_error_p": 0.2840944320613597,
+      "robust_lm_lag": 1.0266264392235518,
+      "robust_lm_lag_p": 0.3109523392228388
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 71.40402170637421,
+     "sigma2_u": 0.4029026615563641,
+     "coverage_sampled": 0.7792792792792793,
+     "coverage_all": 0.9687948350071736,
+     "multiplier": 1.0005867650604239,
+     "coverage_sampled_calibrated": 0.7792792792792793,
+     "coverage_all_calibrated": 0.9687948350071736,
+     "bootstrap_world_nominal_coverage": 0.9497297297297298,
+     "moran_i": 0.16041064191690546,
+     "moran_p": 0.503,
+     "lm": {
+      "lm_error": 0.44555031806534023,
+      "lm_error_p": 0.5044556469825296,
+      "lm_lag": 0.0035096664406564794,
+      "lm_lag_p": 0.9527590084756521,
+      "robust_lm_error": 0.44769409833508605,
+      "robust_lm_error_p": 0.5034320291940091,
+      "robust_lm_lag": 0.005653446710402309,
+      "robust_lm_lag_p": 0.9400640136216443
+     }
+    }
+   }
+  },
+  {
+   "replicate": 3,
+   "seed": 20264013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 24.923918720703966,
+     "sigma2_u": 0.4004868284605587,
+     "coverage_sampled": 0.8828828828828829,
+     "coverage_all": 0.9759684361549498,
+     "multiplier": 1.036387436756244,
+     "coverage_sampled_calibrated": 0.9009009009009009,
+     "coverage_all_calibrated": 0.9808106169296987,
+     "bootstrap_world_nominal_coverage": 0.9416216216216218,
+     "moran_i": 0.31583573128548115,
+     "moran_p": 0.149,
+     "lm": {
+      "lm_error": 2.3798946416853917,
+      "lm_error_p": 0.12290583581570329,
+      "lm_lag": 0.541216022283982,
+      "lm_lag_p": 0.46192920390288816,
+      "robust_lm_error": 2.0067100774070075,
+      "robust_lm_error_p": 0.15660460481804384,
+      "robust_lm_lag": 0.16803145800559827,
+      "robust_lm_lag_p": 0.681867271790253
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 12.28313021493981,
+     "sigma2_u": 0.3993127333709879,
+     "coverage_sampled": 0.9144144144144144,
+     "coverage_all": 0.9766857962697274,
+     "multiplier": 1.1030095414791525,
+     "coverage_sampled_calibrated": 0.9414414414414415,
+     "coverage_all_calibrated": 0.9887015781922525,
+     "bootstrap_world_nominal_coverage": 0.9295495495495496,
+     "moran_i": 0.030048179583278968,
+     "moran_p": 0.866,
+     "lm": {
+      "lm_error": 0.02863932857799529,
+      "lm_error_p": 0.86561448866216,
+      "lm_lag": 0.007003537875940226,
+      "lm_lag_p": 0.9333051798142917,
+      "robust_lm_error": 0.03629309457017989,
+      "robust_lm_error_p": 0.8489114933645451,
+      "robust_lm_lag": 0.014657303868124829,
+      "robust_lm_lag_p": 0.9036376877686899
+     }
+    }
+   }
+  },
+  {
+   "replicate": 4,
+   "seed": 20265013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 3.5322250665435933,
+     "sigma2_u": 0.30811856376573565,
+     "coverage_sampled": 0.9594594594594594,
+     "coverage_all": 0.9664634146341463,
+     "multiplier": 1.2454275905384864,
+     "coverage_sampled_calibrated": 0.9819819819819819,
+     "coverage_all_calibrated": 0.9926470588235294,
+     "bootstrap_world_nominal_coverage": 0.8969369369369369,
+     "moran_i": -0.18609250589070195,
+     "moran_p": 0.336,
+     "lm": {
+      "lm_error": 0.8775804826851348,
+      "lm_error_p": 0.34886522306829515,
+      "lm_lag": 0.2932232515694655,
+      "lm_lag_p": 0.5881623603909333,
+      "robust_lm_error": 0.6894037318986498,
+      "robust_lm_error_p": 0.40636726765748343,
+      "robust_lm_lag": 0.1050465007829807,
+      "robust_lm_lag_p": 0.7458556805160104
+     }
+    },
+    "trio": {
+     "best_model": "SAR",
+     "size_hat": 4.225608260588388,
+     "sigma2_u": 0.1995102016860754,
+     "coverage_sampled": 0.9144144144144144,
+     "coverage_all": 0.8880918220946915,
+     "multiplier": 1.188659921075834,
+     "coverage_sampled_calibrated": 0.9459459459459459,
+     "coverage_all_calibrated": 0.9393830703012912,
+     "bootstrap_world_nominal_coverage": 0.9124324324324324,
+     "moran_i": 0.05963080725529966,
+     "moran_p": 0.747,
+     "lm": {
+      "lm_error": 0.11311732826208419,
+      "lm_error_p": 0.7366226355491927,
+      "lm_lag": 2.02655294949522,
+      "lm_lag_p": 0.15457084240570765,
+      "robust_lm_error": 0.00417861048988743,
+      "robust_lm_error_p": 0.9484589059582653,
+      "robust_lm_lag": 1.9176142317230234,
+      "robust_lm_lag_p": 0.16611990469831928
+     }
+    }
+   }
+  },
+  {
+   "replicate": 5,
+   "seed": 20266013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 9.176646527860377,
+     "sigma2_u": 0.3002140179687421,
+     "coverage_sampled": 0.9234234234234234,
+     "coverage_all": 0.9496054519368723,
+     "multiplier": 1.1006458125440268,
+     "coverage_sampled_calibrated": 0.9324324324324325,
+     "coverage_all_calibrated": 0.9677187948350072,
+     "bootstrap_world_nominal_coverage": 0.9250450450450449,
+     "moran_i": 0.02979025891733082,
+     "moran_p": 0.882,
+     "lm": {
+      "lm_error": 0.0259491089579445,
+      "lm_error_p": 0.872024665390317,
+      "lm_lag": 0.08252137322989048,
+      "lm_lag_p": 0.7739091624855963,
+      "robust_lm_error": 0.05138167090084737,
+      "robust_lm_error_p": 0.820676270508164,
+      "robust_lm_lag": 0.10795393517279336,
+      "robust_lm_lag_p": 0.7424856845275909
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 18.123040350876856,
+     "sigma2_u": 0.35523539163161577,
+     "coverage_sampled": 0.8783783783783784,
+     "coverage_all": 0.968974175035868,
+     "multiplier": 1.1246724751136445,
+     "coverage_sampled_calibrated": 0.9234234234234234,
+     "coverage_all_calibrated": 0.9865494978479197,
+     "bootstrap_world_nominal_coverage": 0.9245045045045046,
+     "moran_i": 0.16234825615382592,
+     "moran_p": 0.379,
+     "lm": {
+      "lm_error": 0.6940163115467206,
+      "lm_error_p": 0.40480163466144636,
+      "lm_lag": 0.18867583602774,
+      "lm_lag_p": 0.6640210001876969,
+      "robust_lm_error": 0.5824088161976223,
+      "robust_lm_error_p": 0.44536968781180253,
+      "robust_lm_lag": 0.07706834067864167,
+      "robust_lm_lag_p": 0.7813103326405386
+     }
+    }
+   }
+  },
+  {
+   "replicate": 6,
+   "seed": 20267013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 5.988756254318826,
+     "sigma2_u": 0.3010174590182446,
+     "coverage_sampled": 0.9414414414414415,
+     "coverage_all": 0.9596484935437589,
+     "multiplier": 1.163579327349998,
+     "coverage_sampled_calibrated": 0.963963963963964,
+     "coverage_all_calibrated": 0.9811692969870875,
+     "bootstrap_world_nominal_coverage": 0.9126126126126125,
+     "moran_i": 0.04738538125951583,
+     "moran_p": 0.789,
+     "lm": {
+      "lm_error": 0.06450750369785349,
+      "lm_error_p": 0.7995084795731797,
+      "lm_lag": 0.4762335354141962,
+      "lm_lag_p": 0.4901333418178042,
+      "robust_lm_error": 0.008168515354730349,
+      "robust_lm_error_p": 0.9279853770135255,
+      "robust_lm_lag": 0.4198945470710731,
+      "robust_lm_lag_p": 0.5169896679109975
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 9.978875630816423,
+     "sigma2_u": 0.41272277844125915,
+     "coverage_sampled": 0.9234234234234234,
+     "coverage_all": 0.9791965566714491,
+     "multiplier": 1.1895295064651896,
+     "coverage_sampled_calibrated": 0.9459459459459459,
+     "coverage_all_calibrated": 0.9939024390243902,
+     "bootstrap_world_nominal_coverage": 0.9095495495495496,
+     "moran_i": -0.41802078389802805,
+     "moran_p": 0.034,
+     "lm": {
+      "lm_error": 4.634237034138605,
+      "lm_error_p": 0.03134007635246828,
+      "lm_lag": 0.15635550887673635,
+      "lm_lag_p": 0.692534320592884,
+      "robust_lm_error": 4.478165667988532,
+      "robust_lm_error_p": 0.03433054860183744,
+      "robust_lm_lag": 0.00028414272666147874,
+      "robust_lm_lag_p": 0.9865510689584429
+     }
+    }
+   }
+  },
+  {
+   "replicate": 7,
+   "seed": 20268013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 11.462549329844853,
+     "sigma2_u": 0.3383254558488411,
+     "coverage_sampled": 0.9234234234234234,
+     "coverage_all": 0.9714849354375896,
+     "multiplier": 1.1001723536155101,
+     "coverage_sampled_calibrated": 0.9504504504504504,
+     "coverage_all_calibrated": 0.983142037302726,
+     "bootstrap_world_nominal_coverage": 0.9248648648648649,
+     "moran_i": 0.4286381849772107,
+     "moran_p": 0.081,
+     "lm": {
+      "lm_error": 3.33141880319538,
+      "lm_error_p": 0.06796821890720839,
+      "lm_lag": 0.012602149328234499,
+      "lm_lag_p": 0.9106178155687322,
+      "robust_lm_error": 3.5898523550194192,
+      "robust_lm_error_p": 0.058133407822543025,
+      "robust_lm_lag": 0.27103570115227305,
+      "robust_lm_lag_p": 0.6026378599753673
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 10.422276224005868,
+     "sigma2_u": 0.38202984167778486,
+     "coverage_sampled": 0.9324324324324325,
+     "coverage_all": 0.9779411764705882,
+     "multiplier": 1.0594618072167186,
+     "coverage_sampled_calibrated": 0.9414414414414415,
+     "coverage_all_calibrated": 0.984038737446198,
+     "bootstrap_world_nominal_coverage": 0.9336936936936937,
+     "moran_i": 0.1610900322577845,
+     "moran_p": 0.4,
+     "lm": {
+      "lm_error": 0.7710856695007907,
+      "lm_error_p": 0.3798814012008006,
+      "lm_lag": 0.3583974337427006,
+      "lm_lag_p": 0.5493976095938626,
+      "robust_lm_error": 0.603962136816871,
+      "robust_lm_error_p": 0.43707027209934934,
+      "robust_lm_lag": 0.19127390105878114,
+      "robust_lm_lag_p": 0.661858469003547
+     }
+    }
+   }
+  },
+  {
+   "replicate": 8,
+   "seed": 20269013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 5.013879544704144,
+     "sigma2_u": 0.22191849115942752,
+     "coverage_sampled": 0.9054054054054054,
+     "coverage_all": 0.922883787661406,
+     "multiplier": 1.1875350688960542,
+     "coverage_sampled_calibrated": 0.9504504504504504,
+     "coverage_all_calibrated": 0.9644906743185079,
+     "bootstrap_world_nominal_coverage": 0.9135135135135134,
+     "moran_i": 0.11065736204780939,
+     "moran_p": 0.51,
+     "lm": {
+      "lm_error": 0.4121697570761108,
+      "lm_error_p": 0.5208702717827542,
+      "lm_lag": 0.4555452934695945,
+      "lm_lag_p": 0.4997132786637989,
+      "robust_lm_error": 0.6621371892040385,
+      "robust_lm_error_p": 0.41580644757665763,
+      "robust_lm_lag": 0.705512725597522,
+      "robust_lm_lag_p": 0.40093751524596244
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 7.066011956004001,
+     "sigma2_u": 0.3036358373856445,
+     "coverage_sampled": 0.9414414414414415,
+     "coverage_all": 0.9600071736011477,
+     "multiplier": 1.1378567028538311,
+     "coverage_sampled_calibrated": 0.963963963963964,
+     "coverage_all_calibrated": 0.9818866571018652,
+     "bootstrap_world_nominal_coverage": 0.9181981981981981,
+     "moran_i": 0.4013895425734775,
+     "moran_p": 0.039,
+     "lm": {
+      "lm_error": 4.862582441267985,
+      "lm_error_p": 0.027445225989087867,
+      "lm_lag": 0.43935034058446243,
+      "lm_lag_p": 0.5074361850515448,
+      "robust_lm_error": 5.618299382706764,
+      "robust_lm_error_p": 0.017773887334503167,
+      "robust_lm_lag": 1.1950672820232426,
+      "robust_lm_lag_p": 0.27430980329510546
+     }
+    }
+   }
+  },
+  {
+   "replicate": 9,
+   "seed": 20270013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 26.695221809729684,
+     "sigma2_u": 0.4009911443109814,
+     "coverage_sampled": 0.8648648648648649,
+     "coverage_all": 0.975609756097561,
+     "multiplier": 1.0409559146438725,
+     "coverage_sampled_calibrated": 0.8963963963963963,
+     "coverage_all_calibrated": 0.9820659971305595,
+     "bootstrap_world_nominal_coverage": 0.9427027027027027,
+     "moran_i": -0.062071366748527854,
+     "moran_p": 0.746,
+     "lm": {
+      "lm_error": 0.08625615502518132,
+      "lm_error_p": 0.7689917533405142,
+      "lm_lag": 0.10791362810932613,
+      "lm_lag_p": 0.74253205857561,
+      "robust_lm_error": 0.1409742762019021,
+      "robust_lm_error_p": 0.7073143646367226,
+      "robust_lm_lag": 0.16263174928604693,
+      "robust_lm_lag_p": 0.6867449973741395
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 3.4836527087910696,
+     "sigma2_u": 0.27314515173745496,
+     "coverage_sampled": 0.9819819819819819,
+     "coverage_all": 0.9542682926829268,
+     "multiplier": 1.238643741276471,
+     "coverage_sampled_calibrated": 0.990990990990991,
+     "coverage_all_calibrated": 0.9863701578192252,
+     "bootstrap_world_nominal_coverage": 0.9014414414414414,
+     "moran_i": 0.19317453439663376,
+     "moran_p": 0.334,
+     "lm": {
+      "lm_error": 0.940017904339047,
+      "lm_error_p": 0.33227323716168167,
+      "lm_lag": 0.09716638825927362,
+      "lm_lag_p": 0.7552569479644394,
+      "robust_lm_error": 0.8550753751334381,
+      "robust_lm_error_p": 0.3551204925134265,
+      "robust_lm_lag": 0.01222385905366458,
+      "robust_lm_lag_p": 0.9119640294118992
+     }
+    }
+   }
+  },
+  {
+   "replicate": 10,
+   "seed": 20271013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 2.9814077629912763,
+     "sigma2_u": 0.20466484904185991,
+     "coverage_sampled": 0.9369369369369369,
+     "coverage_all": 0.9069225251076041,
+     "multiplier": 1.4134120350151984,
+     "coverage_sampled_calibrated": 0.9954954954954955,
+     "coverage_all_calibrated": 0.9836800573888091,
+     "bootstrap_world_nominal_coverage": 0.8686486486486487,
+     "moran_i": -0.00592550414799642,
+     "moran_p": 0.981,
+     "lm": {
+      "lm_error": 0.001037787159773303,
+      "lm_error_p": 0.9743008300953074,
+      "lm_lag": 2.016128963320706,
+      "lm_lag_p": 0.1556354678262323,
+      "robust_lm_error": 0.0851174197775395,
+      "robust_lm_error_p": 0.7704786192001299,
+      "robust_lm_lag": 2.100208595938472,
+      "robust_lm_lag_p": 0.14727904475080428
+     }
+    },
+    "trio": {
+     "best_model": "SAR",
+     "size_hat": 3.5614365194220214,
+     "sigma2_u": 0.31066046081286836,
+     "coverage_sampled": 0.972972972972973,
+     "coverage_all": 0.9639526542324247,
+     "multiplier": 1.3219055673265037,
+     "coverage_sampled_calibrated": 0.9864864864864865,
+     "coverage_all_calibrated": 0.9939024390243902,
+     "bootstrap_world_nominal_coverage": 0.8783783783783783,
+     "moran_i": 0.014744053516161537,
+     "moran_p": 0.92,
+     "lm": {
+      "lm_error": 0.0077484515912343834,
+      "lm_error_p": 0.929856576044382,
+      "lm_lag": 0.03631317397861978,
+      "lm_lag_p": 0.8488702070803673,
+      "robust_lm_error": 0.0023537144508445473,
+      "robust_lm_error_p": 0.9613057344716984,
+      "robust_lm_lag": 0.03091843683822994,
+      "robust_lm_lag_p": 0.8604224781685861
+     }
+    }
+   }
+  },
+  {
+   "replicate": 11,
+   "seed": 20272013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 68.63076259852387,
+     "sigma2_u": 0.36452355496735545,
+     "coverage_sampled": 0.8333333333333334,
+     "coverage_all": 0.9687948350071736,
+     "multiplier": 1.0245931729786462,
+     "coverage_sampled_calibrated": 0.8468468468468469,
+     "coverage_all_calibrated": 0.9732783357245337,
+     "bootstrap_world_nominal_coverage": 0.9446846846846847,
+     "moran_i": -0.029288935376211377,
+     "moran_p": 0.877,
+     "lm": {
+      "lm_error": 0.02050347654164507,
+      "lm_error_p": 0.8861398502968134,
+      "lm_lag": 0.06425997980589752,
+      "lm_lag_p": 0.799885320915523,
+      "robust_lm_error": 0.0401831435106107,
+      "robust_lm_error_p": 0.8411229217775392,
+      "robust_lm_lag": 0.08393964677486312,
+      "robust_lm_lag_p": 0.7720278554350088
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 2.261047169021237,
+     "sigma2_u": 0.16069489210325802,
+     "coverage_sampled": 0.8963963963963963,
+     "coverage_all": 0.8735652797704447,
+     "multiplier": 1.0840981340156275,
+     "coverage_sampled_calibrated": 0.9279279279279279,
+     "coverage_all_calibrated": 0.9008249641319943,
+     "bootstrap_world_nominal_coverage": 0.9338738738738739,
+     "moran_i": 0.4671469741236758,
+     "moran_p": 0.011,
+     "lm": {
+      "lm_error": 6.8624621205316885,
+      "lm_error_p": 0.008802517634693224,
+      "lm_lag": 0.017735607449498602,
+      "lm_lag_p": 0.8940549021769116,
+      "robust_lm_error": 7.305900445357506,
+      "robust_lm_error_p": 0.006872854715752231,
+      "robust_lm_lag": 0.46117393227531717,
+      "robust_lm_lag_p": 0.4970758448831839
+     }
+    }
+   }
+  },
+  {
+   "replicate": 12,
+   "seed": 20273013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 36.900890417591896,
+     "sigma2_u": 0.37484838226053574,
+     "coverage_sampled": 0.8738738738738738,
+     "coverage_all": 0.975609756097561,
+     "multiplier": 1.043983080321112,
+     "coverage_sampled_calibrated": 0.8918918918918919,
+     "coverage_all_calibrated": 0.9806312769010043,
+     "bootstrap_world_nominal_coverage": 0.9409009009009008,
+     "moran_i": -0.3095675328560228,
+     "moran_p": 0.177,
+     "lm": {
+      "lm_error": 1.9148827615974686,
+      "lm_error_p": 0.16642188083849618,
+      "lm_lag": 0.029444975449552886,
+      "lm_lag_p": 0.8637556374867298,
+      "robust_lm_error": 2.112389521440218,
+      "robust_lm_error_p": 0.14611101186801012,
+      "robust_lm_lag": 0.2269517352923025,
+      "robust_lm_lag_p": 0.6337933405651548
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 2.041588974365489,
+     "sigma2_u": 0.13884548849214481,
+     "coverage_sampled": 0.9144144144144144,
+     "coverage_all": 0.8780487804878049,
+     "multiplier": 1.105754837271978,
+     "coverage_sampled_calibrated": 0.9459459459459459,
+     "coverage_all_calibrated": 0.913558106169297,
+     "bootstrap_world_nominal_coverage": 0.9315315315315316,
+     "moran_i": -0.4081138924978222,
+     "moran_p": 0.029,
+     "lm": {
+      "lm_error": 4.35748991550644,
+      "lm_error_p": 0.036846558836408944,
+      "lm_lag": 0.7162931758320233,
+      "lm_lag_p": 0.39736251300725545,
+      "robust_lm_error": 3.841953488059072,
+      "robust_lm_error_p": 0.04998525158453063,
+      "robust_lm_lag": 0.2007567483846572,
+      "robust_lm_lag_p": 0.6541107126815092
+     }
+    }
+   }
+  },
+  {
+   "replicate": 13,
+   "seed": 20274013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 66.82078368080789,
+     "sigma2_u": 0.3169266721081001,
+     "coverage_sampled": 0.8198198198198198,
+     "coverage_all": 0.9470946915351507,
+     "multiplier": 0.9728553165380303,
+     "coverage_sampled_calibrated": 0.8108108108108109,
+     "coverage_all_calibrated": 0.9395624103299857,
+     "bootstrap_world_nominal_coverage": 0.9538738738738738,
+     "moran_i": -0.0567727782204406,
+     "moran_p": 0.768,
+     "lm": {
+      "lm_error": 0.08400174218735224,
+      "lm_error_p": 0.7719458822682544,
+      "lm_lag": 1.593756813001893,
+      "lm_lag_p": 0.20679021017987217,
+      "robust_lm_error": 0.0038263530103975593,
+      "robust_lm_error_p": 0.9506762953283389,
+      "robust_lm_lag": 1.5135814238249385,
+      "robust_lm_lag_p": 0.21859340519115192
+     }
+    },
+    "trio": {
+     "best_model": "SAR",
+     "size_hat": 8.830516119796556,
+     "sigma2_u": 0.24873023936466993,
+     "coverage_sampled": 0.918918918918919,
+     "coverage_all": 0.9237804878048781,
+     "multiplier": 1.1367204853717225,
+     "coverage_sampled_calibrated": 0.9369369369369369,
+     "coverage_all_calibrated": 0.9569583931133429,
+     "bootstrap_world_nominal_coverage": 0.9176576576576576,
+     "moran_i": 0.01691474665660116,
+     "moran_p": 0.917,
+     "lm": {
+      "lm_error": 0.008143555806859886,
+      "lm_error_p": 0.928095185597502,
+      "lm_lag": 0.0165092591527278,
+      "lm_lag_p": 0.8977625077144685,
+      "robust_lm_error": 0.013804457314440549,
+      "robust_lm_error_p": 0.9064698889930409,
+      "robust_lm_lag": 0.022170160660308455,
+      "robust_lm_lag_p": 0.8816353217105989
+     }
+    }
+   }
+  },
+  {
+   "replicate": 14,
+   "seed": 20275013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 3.6369424413559854,
+     "sigma2_u": 0.21726664575187896,
+     "coverage_sampled": 0.954954954954955,
+     "coverage_all": 0.9079985652797704,
+     "multiplier": 1.1942643011573892,
+     "coverage_sampled_calibrated": 0.9864864864864865,
+     "coverage_all_calibrated": 0.9553443328550932,
+     "bootstrap_world_nominal_coverage": 0.9126126126126127,
+     "moran_i": 0.1562941081172148,
+     "moran_p": 0.374,
+     "lm": {
+      "lm_error": 0.7020644558213781,
+      "lm_error_p": 0.4020908754762119,
+      "lm_lag": 4.268352524070794,
+      "lm_lag_p": 0.03882855901770649,
+      "robust_lm_error": 0.15601103559916626,
+      "robust_lm_error_p": 0.6928559336342823,
+      "robust_lm_lag": 3.7222991038485813,
+      "robust_lm_lag_p": 0.0536903946461526
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 3.850047134778065,
+     "sigma2_u": 0.10897276209659086,
+     "coverage_sampled": 0.8738738738738738,
+     "coverage_all": 0.8199426111908178,
+     "multiplier": 1.271933035590876,
+     "coverage_sampled_calibrated": 0.9279279279279279,
+     "coverage_all_calibrated": 0.9088952654232425,
+     "bootstrap_world_nominal_coverage": 0.9050450450450449,
+     "moran_i": 0.16138481011808226,
+     "moran_p": 0.413,
+     "lm": {
+      "lm_error": 0.6486183809013824,
+      "lm_error_p": 0.4206070779047453,
+      "lm_lag": 0.009566283925031631,
+      "lm_lag_p": 0.9220852457017702,
+      "robust_lm_error": 0.701084551865855,
+      "robust_lm_error_p": 0.40241950891636225,
+      "robust_lm_lag": 0.062032454889504346,
+      "robust_lm_lag_p": 0.8033119300099814
+     }
+    }
+   }
+  },
+  {
+   "replicate": 15,
+   "seed": 20276013,
+   "products": {
+    "steamers": {
+     "best_model": "SAR",
+     "size_hat": 5.196358495975896,
+     "sigma2_u": 0.30651328982701764,
+     "coverage_sampled": 0.9279279279279279,
+     "coverage_all": 0.9451219512195121,
+     "multiplier": 1.2443669041673715,
+     "coverage_sampled_calibrated": 0.9864864864864865,
+     "coverage_all_calibrated": 0.9824246771879483,
+     "bootstrap_world_nominal_coverage": 0.8904504504504505,
+     "moran_i": 0.14310419545264258,
+     "moran_p": 0.446,
+     "lm": {
+      "lm_error": 0.5930410248867992,
+      "lm_error_p": 0.4412455767368463,
+      "lm_lag": 1.7309216420028504,
+      "lm_lag_p": 0.1882932381460208,
+      "robust_lm_error": 0.24124128489703642,
+      "robust_lm_error_p": 0.6233110274285142,
+      "robust_lm_lag": 1.3791219020130878,
+      "robust_lm_lag_p": 0.2402507759848047
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 77.0053649915497,
+     "sigma2_u": 0.3239516096284307,
+     "coverage_sampled": 0.8378378378378378,
+     "coverage_all": 0.956599713055954,
+     "multiplier": 1.0036914382059237,
+     "coverage_sampled_calibrated": 0.8378378378378378,
+     "coverage_all_calibrated": 0.9574964131994261,
+     "bootstrap_world_nominal_coverage": 0.9493693693693693,
+     "moran_i": 0.2990900549631686,
+     "moran_p": 0.108,
+     "lm": {
+      "lm_error": 2.7754126449715093,
+      "lm_error_p": 0.0957219841196561,
+      "lm_lag": 0.20537833296473762,
+      "lm_lag_p": 0.6504141911612058,
+      "robust_lm_error": 3.148173487454897,
+      "robust_lm_error_p": 0.07601200331410728,
+      "robust_lm_lag": 0.5781391754481252,
+      "robust_lm_lag_p": 0.44704263045137715
+     }
+    }
+   }
+  },
+  {
+   "replicate": 16,
+   "seed": 20277013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 102.2938935337745,
+     "sigma2_u": 0.40961869192576866,
+     "coverage_sampled": 0.7882882882882883,
+     "coverage_all": 0.9725609756097561,
+     "multiplier": 1.044891485338069,
+     "coverage_sampled_calibrated": 0.8018018018018018,
+     "coverage_all_calibrated": 0.978299856527977,
+     "bootstrap_world_nominal_coverage": 0.94,
+     "moran_i": 0.2706979366882396,
+     "moran_p": 0.128,
+     "lm": {
+      "lm_error": 2.1855772968741816,
+      "lm_error_p": 0.13930882135171097,
+      "lm_lag": 0.8932455513498191,
+      "lm_lag_p": 0.3445993071635097,
+      "robust_lm_error": 1.7311067196999446,
+      "robust_lm_error_p": 0.18826962091993943,
+      "robust_lm_lag": 0.438774974175582,
+      "robust_lm_lag_p": 0.5077143165049482
+     }
+    },
+    "trio": {
+     "best_model": "SDM",
+     "size_hat": 8.56661341076147,
+     "sigma2_u": 0.5241217020771002,
+     "coverage_sampled": 0.9504504504504504,
+     "coverage_all": 0.9626972740315638,
+     "multiplier": 1.1273676137386686,
+     "coverage_sampled_calibrated": 0.9594594594594594,
+     "coverage_all_calibrated": 0.9817073170731707,
+     "bootstrap_world_nominal_coverage": 0.9214414414414415,
+     "moran_i": 0.17296641302454355,
+     "moran_p": 0.38,
+     "lm": {
+      "lm_error": 0.752580056770696,
+      "lm_error_p": 0.38566059694410126,
+      "lm_lag": 0.00040439382274720057,
+      "lm_lag_p": 0.983955985427935,
+      "robust_lm_error": 0.7999553656529699,
+      "robust_lm_error_p": 0.3711067147928324,
+      "robust_lm_lag": 0.047779702705021077,
+      "robust_lm_lag_p": 0.826972803056351
+     }
+    }
+   }
+  },
+  {
+   "replicate": 17,
+   "seed": 20278013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 25.780958317840867,
+     "sigma2_u": 0.40361617717027054,
+     "coverage_sampled": 0.8783783783783784,
+     "coverage_all": 0.9786585365853658,
+     "multiplier": 1.060720726189841,
+     "coverage_sampled_calibrated": 0.8918918918918919,
+     "coverage_all_calibrated": 0.9851147776183644,
+     "bootstrap_world_nominal_coverage": 0.9392792792792792,
+     "moran_i": 0.3472448439818447,
+     "moran_p": 0.063,
+     "lm": {
+      "lm_error": 3.3931079046291566,
+      "lm_error_p": 0.06546943637558578,
+      "lm_lag": 0.06656634299188618,
+      "lm_lag_p": 0.7964034029116782,
+      "robust_lm_error": 3.7726348663568956,
+      "robust_lm_error_p": 0.05209750488164027,
+      "robust_lm_lag": 0.44609330471962494,
+      "robust_lm_lag_p": 0.5041960440366315
+     }
+    },
+    "trio": {
+     "best_model": "SAR",
+     "size_hat": 3.1468211606179572,
+     "sigma2_u": 0.24761870575198583,
+     "coverage_sampled": 0.9234234234234234,
+     "coverage_all": 0.9262912482065997,
+     "multiplier": 1.1837947565736153,
+     "coverage_sampled_calibrated": 0.9684684684684685,
+     "coverage_all_calibrated": 0.9682568149210904,
+     "bootstrap_world_nominal_coverage": 0.916936936936937,
+     "moran_i": -0.12939137620782906,
+     "moran_p": 0.405,
+     "lm": {
+      "lm_error": 0.6358804494973839,
+      "lm_error_p": 0.42520649487208906,
+      "lm_lag": 2.614228906269128,
+      "lm_lag_p": 0.10590899537218239,
+      "robust_lm_error": 1.3113043733929322,
+      "robust_lm_error_p": 0.25215862721343363,
+      "robust_lm_lag": 3.2896528301646764,
+      "robust_lm_lag_p": 0.06971776192168266
+     }
+    }
+   }
+  },
+  {
+   "replicate": 18,
+   "seed": 20279013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 3.005597645191113,
+     "sigma2_u": 0.07799278573373923,
+     "coverage_sampled": 0.7342342342342343,
+     "coverage_all": 0.7512553802008608,
+     "multiplier": 1.042453402551776,
+     "coverage_sampled_calibrated": 0.7432432432432432,
+     "coverage_all_calibrated": 0.7697274031563845,
+     "bootstrap_world_nominal_coverage": 0.9439639639639641,
+     "moran_i": 0.4275967315692921,
+     "moran_p": 0.026,
+     "lm": {
+      "lm_error": 4.686694985046652,
+      "lm_error_p": 0.03039706072234876,
+      "lm_lag": 1.5165111795639346,
+      "lm_lag_p": 0.21814822017031338,
+      "robust_lm_error": 3.8189894196335334,
+      "robust_lm_error_p": 0.05067479337835222,
+      "robust_lm_lag": 0.6488056141508162,
+      "robust_lm_lag_p": 0.4205400275535853
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 16.782473734173006,
+     "sigma2_u": 0.5787789485088006,
+     "coverage_sampled": 0.9054054054054054,
+     "coverage_all": 0.9899569583931134,
+     "multiplier": 1.0388879408155818,
+     "coverage_sampled_calibrated": 0.9234234234234234,
+     "coverage_all_calibrated": 0.9922883787661406,
+     "bootstrap_world_nominal_coverage": 0.9409009009009008,
+     "moran_i": 0.2981643097828367,
+     "moran_p": 0.092,
+     "lm": {
+      "lm_error": 2.972923730474116,
+      "lm_error_p": 0.08466870417636237,
+      "lm_lag": 1.9482887298141947,
+      "lm_lag_p": 0.16277137578955578,
+      "robust_lm_error": 4.327122133176062,
+      "robust_lm_error_p": 0.03750961438669431,
+      "robust_lm_lag": 3.30248713251614,
+      "robust_lm_lag_p": 0.06917507042003991
+     }
+    }
+   }
+  },
+  {
+   "replicate": 19,
+   "seed": 20280013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 19.737672896630187,
+     "sigma2_u": 0.4013899246087572,
+     "coverage_sampled": 0.8648648648648649,
+     "coverage_all": 0.9661047345767575,
+     "multiplier": 1.0660145500712412,
+     "coverage_sampled_calibrated": 0.8828828828828829,
+     "coverage_all_calibrated": 0.975609756097561,
+     "bootstrap_world_nominal_coverage": 0.9353153153153153,
+     "moran_i": 0.22363894126384992,
+     "moran_p": 0.178,
+     "lm": {
+      "lm_error": 1.7225799411858835,
+      "lm_error_p": 0.1893612883548181,
+      "lm_lag": 0.49106764560782057,
+      "lm_lag_p": 0.4834514383882891,
+      "robust_lm_error": 2.2635766003970783,
+      "robust_lm_error_p": 0.13244785510637078,
+      "robust_lm_lag": 1.0320643048190152,
+      "robust_lm_lag_p": 0.3096743145392294
+     }
+    },
+    "trio": {
+     "best_model": "SAR",
+     "size_hat": 67.48529459204408,
+     "sigma2_u": 0.4905056604087158,
+     "coverage_sampled": 0.8378378378378378,
+     "coverage_all": 0.9824246771879483,
+     "multiplier": 1.0654354461122943,
+     "coverage_sampled_calibrated": 0.8558558558558559,
+     "coverage_all_calibrated": 0.9865494978479197,
+     "bootstrap_world_nominal_coverage": 0.9372972972972973,
+     "moran_i": 0.0450804059803165,
+     "moran_p": 0.786,
+     "lm": {
+      "lm_error": 0.05942231003948321,
+      "lm_error_p": 0.8074113435672403,
+      "lm_lag": 0.4816100058150415,
+      "lm_lag_p": 0.4876939538266949,
+      "robust_lm_error": 0.01047396214800776,
+      "robust_lm_error_p": 0.9184849198219329,
+      "robust_lm_lag": 0.4326616579235661,
+      "robust_lm_lag_p": 0.5106857951080721
+     }
+    }
+   }
+  },
+  {
+   "replicate": 20,
+   "seed": 20281013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 8.276884307563588,
+     "sigma2_u": 0.2285288785460429,
+     "coverage_sampled": 0.8963963963963963,
+     "coverage_all": 0.9187589670014347,
+     "multiplier": 1.189481893425861,
+     "coverage_sampled_calibrated": 0.9459459459459459,
+     "coverage_all_calibrated": 0.9666427546628408,
+     "bootstrap_world_nominal_coverage": 0.9088288288288289,
+     "moran_i": -0.4493154775620514,
+     "moran_p": 0.015,
+     "lm": {
+      "lm_error": 6.13365632821242,
+      "lm_error_p": 0.013263230260014044,
+      "lm_lag": 0.9920826625356823,
+      "lm_lag_p": 0.3192338857814384,
+      "robust_lm_error": 7.454867791227427,
+      "robust_lm_error_p": 0.0063265125327193125,
+      "robust_lm_lag": 2.3132941255506885,
+      "robust_lm_lag_p": 0.1282719542500288
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 35.69606578695596,
+     "sigma2_u": 0.3943122528056088,
+     "coverage_sampled": 0.8558558558558559,
+     "coverage_all": 0.9790172166427547,
+     "multiplier": 0.9819510559825536,
+     "coverage_sampled_calibrated": 0.8513513513513513,
+     "coverage_all_calibrated": 0.9772238163558106,
+     "bootstrap_world_nominal_coverage": 0.9535135135135134,
+     "moran_i": 0.32540589547026705,
+     "moran_p": 0.064,
+     "lm": {
+      "lm_error": 3.199149132576563,
+      "lm_error_p": 0.07367659202277844,
+      "lm_lag": 1.2081090275019621,
+      "lm_lag_p": 0.2717069477659195,
+      "robust_lm_error": 4.125492839193304,
+      "robust_lm_error_p": 0.04224171500666717,
+      "robust_lm_lag": 2.1344527341187036,
+      "robust_lm_lag_p": 0.1440218530689262
+     }
+    }
+   }
+  },
+  {
+   "replicate": 21,
+   "seed": 20282013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 12.68223019807048,
+     "sigma2_u": 0.33162327830537747,
+     "coverage_sampled": 0.9009009009009009,
+     "coverage_all": 0.9661047345767575,
+     "multiplier": 1.0258761209137275,
+     "coverage_sampled_calibrated": 0.918918918918919,
+     "coverage_all_calibrated": 0.9709469153515065,
+     "bootstrap_world_nominal_coverage": 0.9448648648648649,
+     "moran_i": -0.14401053447034293,
+     "moran_p": 0.382,
+     "lm": {
+      "lm_error": 0.6782224645001181,
+      "lm_error_p": 0.41019948483109314,
+      "lm_lag": 0.42991163801328264,
+      "lm_lag_p": 0.5120323093038408,
+      "robust_lm_error": 0.4930559333056337,
+      "robust_lm_error_p": 0.4825672803032852,
+      "robust_lm_lag": 0.24474510681879813,
+      "robust_lm_lag_p": 0.6207997594014982
+     }
+    },
+    "trio": {
+     "best_model": "SAR",
+     "size_hat": 2.8793129952928758,
+     "sigma2_u": 0.17815505430972214,
+     "coverage_sampled": 0.918918918918919,
+     "coverage_all": 0.8434361549497847,
+     "multiplier": 1.1051518767009463,
+     "coverage_sampled_calibrated": 0.9369369369369369,
+     "coverage_all_calibrated": 0.8827116212338594,
+     "bootstrap_world_nominal_coverage": 0.9326126126126126,
+     "moran_i": 0.09326083358874093,
+     "moran_p": 0.614,
+     "lm": {
+      "lm_error": 0.2498292190154811,
+      "lm_error_p": 0.6171953552575173,
+      "lm_lag": 2.561708102383527,
+      "lm_lag_p": 0.10948023859681127,
+      "robust_lm_error": 0.0377141120215221,
+      "robust_lm_error_p": 0.846018331319914,
+      "robust_lm_lag": 2.3495929953895676,
+      "robust_lm_lag_p": 0.12531572204753239
+     }
+    }
+   }
+  },
+  {
+   "replicate": 22,
+   "seed": 20283013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 9.150294294621519,
+     "sigma2_u": 0.3834503930769809,
+     "coverage_sampled": 0.9459459459459459,
+     "coverage_all": 0.9759684361549498,
+     "multiplier": 1.1181972501287174,
+     "coverage_sampled_calibrated": 0.9684684684684685,
+     "coverage_all_calibrated": 0.9876255380200861,
+     "bootstrap_world_nominal_coverage": 0.9207207207207208,
+     "moran_i": 0.2823971440897403,
+     "moran_p": 0.184,
+     "lm": {
+      "lm_error": 1.6934753566708711,
+      "lm_error_p": 0.1931434735472671,
+      "lm_lag": 1.4210816328368272,
+      "lm_lag_p": 0.23322545365618239,
+      "robust_lm_error": 1.1373348813175896,
+      "robust_lm_error_p": 0.2862161856366292,
+      "robust_lm_lag": 0.8649411574835456,
+      "robust_lm_lag_p": 0.35235962789324804
+     }
+    },
+    "trio": {
+     "best_model": "SEM",
+     "size_hat": 43.880542520098935,
+     "sigma2_u": 0.3734625509936653,
+     "coverage_sampled": 0.8108108108108109,
+     "coverage_all": 0.9713055954088953,
+     "multiplier": 0.989529785287746,
+     "coverage_sampled_calibrated": 0.8108108108108109,
+     "coverage_all_calibrated": 0.96987087517934,
+     "bootstrap_world_nominal_coverage": 0.9509909909909909,
+     "moran_i": 0.20371837965680645,
+     "moran_p": 0.363,
+     "lm": {
+      "lm_error": 0.8069673540832248,
+      "lm_error_p": 0.3690183750611653,
+      "lm_lag": 0.6336605130243205,
+      "lm_lag_p": 0.42601578427016373,
+      "robust_lm_error": 0.5725213025974134,
+      "robust_lm_error_p": 0.4492587538034354,
+      "robust_lm_lag": 0.3992144615385091,
+      "robust_lm_lag_p": 0.5274952206684685
+     }
+    }
+   }
+  },
+  {
+   "replicate": 23,
+   "seed": 20284013,
+   "products": {
+    "steamers": {
+     "best_model": "SEM",
+     "size_hat": 28.099086200263454,
+     "sigma2_u": 0.3953834375227644,
+     "coverage_sampled": 0.8963963963963963,
+     "coverage_all": 0.974713055954089,
+     "multiplier": 1.0516886790805053,
+     "coverage_sampled_calibrated": 0.918918918918919,
+     "coverage_all_calibrated": 0.982245337159254,
+     "bootstrap_world_nominal_coverage": 0.9390990990990989,
+     "moran_i": 0.281383719648986,
+     "moran_p": 0.111,
+     "lm": {
+      "lm_error": 2.457542814286554,
+      "lm_error_p": 0.11696162311044273,
+      "lm_lag": 0.0013821100560920429,
+      "lm_lag_p": 0.9703440839464689,
+      "robust_lm_error": 2.6062396868290185,
+      "robust_lm_error_p": 0.10644389233442896,
+      "robust_lm_lag": 0.15007898259855607,
+      "robust_lm_lag_p": 0.6984598911384439
+     }
+    },
+    "trio": {
+     "best_model": "SAR",
+     "size_hat": 66.85135806681791,
+     "sigma2_u": 0.36318492115411327,
+     "coverage_sampled": 0.8378378378378378,
+     "coverage_all": 0.9619799139167863,
+     "multiplier": 0.9974383379032794,
+     "coverage_sampled_calibrated": 0.8378378378378378,
+     "coverage_all_calibrated": 0.9616212338593975,
+     "bootstrap_world_nominal_coverage": 0.9504504504504504,
+     "moran_i": 0.07800348921294754,
+     "moran_p": 0.652,
+     "lm": {
+      "lm_error": 0.17882372656221895,
+      "lm_error_p": 0.6723860660846934,
+      "lm_lag": 1.0146469612918227,
+      "lm_lag_p": 0.3137921389616673,
+      "robust_lm_error": 0.05721541373877416,
+      "robust_lm_error_p": 0.8109524901768629,
+      "robust_lm_lag": 0.893038648468378,
+      "robust_lm_lag_p": 0.344655189297559
+     }
+    }
+   }
+  }
+ ]
+}

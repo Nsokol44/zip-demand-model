@@ -1,0 +1,365 @@
+{
+ "source_archive": "ecra_bayes_test_a_results.zip (uploaded by Nick 2026-10-26, local run)",
+ "source_json": "test_a_bayes.json (uploaded by Nick 2026-10-26; byte-identical to the copy inside the archive)",
+ "integrated": "2026-10-26",
+ "draws": [
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23
+ ],
+ "files": [
+  {
+   "file": "tier2_r10_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r10_zbp22_eshop_grading.json",
+   "bytes": 345,
+   "sha256": "90bac1ca3940a39e2643679828078a0356c415c1d1d5c7668db775ec852d70c8"
+  },
+  {
+   "file": "tier2_r10_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r10_zbp22_eshop_arrays.npz",
+   "bytes": 101129,
+   "sha256": "81968753431dc3644009e2a6aa85fc416b3a0a6c6625bf0fd1b356e33c8cc176"
+  },
+  {
+   "file": "tier2_r10_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r10_zbp22_eshop.json",
+   "bytes": 1935,
+   "sha256": "3a566920e821fd80f9181e0f4a78a5105e2e52ce4d968ebf80dbe9687611929d"
+  },
+  {
+   "file": "tier2_r10_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r10_zbp22_eshop.csv",
+   "bytes": 345387,
+   "sha256": "8d4860f6a04be1942bd084bfb112e7254939c9c740241b6fdbc7d774a2bf4037"
+  },
+  {
+   "file": "tier2_r11_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r11_zbp22_eshop_grading.json",
+   "bytes": 345,
+   "sha256": "e11e851f7f06707b910c0f58c1ff7bc075f41ee5a87495ed1c4d5f6041bf1ce7"
+  },
+  {
+   "file": "tier2_r11_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r11_zbp22_eshop_arrays.npz",
+   "bytes": 100916,
+   "sha256": "1b0d3a4f41be137de94d0c42fd7613379f53702594966959709547837ba05336"
+  },
+  {
+   "file": "tier2_r11_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r11_zbp22_eshop.json",
+   "bytes": 1935,
+   "sha256": "a31cdb4d69362630ff78f5e6ea6751e1de5ab40a474498a1a0bb2cf11013147b"
+  },
+  {
+   "file": "tier2_r11_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r11_zbp22_eshop.csv",
+   "bytes": 345000,
+   "sha256": "bdc71431e31e42f9dc01abc5bdc9e4460da56f9f28ae199c021e4f802b8d4686"
+  },
+  {
+   "file": "tier2_r12_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r12_zbp22_eshop_grading.json",
+   "bytes": 342,
+   "sha256": "69e7e4507e1cd4886a2361da99c069eff7d1df5b32fa74c8a74a73f61f4601a1"
+  },
+  {
+   "file": "tier2_r12_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r12_zbp22_eshop_arrays.npz",
+   "bytes": 101322,
+   "sha256": "0cf62f0d7c6eebe1b0129f6e76514e03fda26ff2f9e64f9e7988d8e8864f98c1"
+  },
+  {
+   "file": "tier2_r12_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r12_zbp22_eshop.json",
+   "bytes": 1923,
+   "sha256": "5a3c0de9c7c20053b24a678cae7fa9f5f31fbf94e3cb428d0d723f921f1fe512"
+  },
+  {
+   "file": "tier2_r12_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r12_zbp22_eshop.csv",
+   "bytes": 345870,
+   "sha256": "c480fb37d841e9a2e0fa885e531c9ccf589e9971aa69a2dae907ecadb9c24cb7"
+  },
+  {
+   "file": "tier2_r13_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r13_zbp22_eshop_grading.json",
+   "bytes": 343,
+   "sha256": "b480542c8ab3ab2eefc9cceda22675b6c5aad504f77018b9979e65c9ced9d0fe"
+  },
+  {
+   "file": "tier2_r13_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r13_zbp22_eshop_arrays.npz",
+   "bytes": 101191,
+   "sha256": "c06ad9f2397240ed845e061ece503df84b9ed3ab04688f88202e49bf27b84216"
+  },
+  {
+   "file": "tier2_r13_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r13_zbp22_eshop.json",
+   "bytes": 1930,
+   "sha256": "86d27f372c4688ecb818ea8a07015b650ac67f0d3f85300e30c6543b14afa9b6"
+  },
+  {
+   "file": "tier2_r13_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r13_zbp22_eshop.csv",
+   "bytes": 344393,
+   "sha256": "569d99825cd1c2785760f1a668f0f676cdae8cea099ad87cd47469ef5b75a03f"
+  },
+  {
+   "file": "tier2_r14_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r14_zbp22_eshop_grading.json",
+   "bytes": 345,
+   "sha256": "785ac7c705146a33cf95389995e9d5276446efcdc992c10ba150562c222c0578"
+  },
+  {
+   "file": "tier2_r14_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r14_zbp22_eshop_arrays.npz",
+   "bytes": 101026,
+   "sha256": "a3d91ebb6258782d72c3afa0610afb5ad6971f2cd3941a710bb059f396627135"
+  },
+  {
+   "file": "tier2_r14_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r14_zbp22_eshop.json",
+   "bytes": 1928,
+   "sha256": "5880918b45390bb24d941007e5b7f43abfb1ada54c35f1c955868fd1bf6df692"
+  },
+  {
+   "file": "tier2_r14_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r14_zbp22_eshop.csv",
+   "bytes": 345495,
+   "sha256": "75bf97e66c758cc796de21a7667d4fb5f95ca3b5c82c94b1ec12711209a7c5f8"
+  },
+  {
+   "file": "tier2_r15_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r15_zbp22_eshop_grading.json",
+   "bytes": 344,
+   "sha256": "3164677afadafcd4946a3304466952402ad89792e1df168e48ac53e168815089"
+  },
+  {
+   "file": "tier2_r15_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r15_zbp22_eshop_arrays.npz",
+   "bytes": 100779,
+   "sha256": "97c241473fa683d7825747dc09327ebcd597993a7812f780ccfe572638acb752"
+  },
+  {
+   "file": "tier2_r15_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r15_zbp22_eshop.json",
+   "bytes": 1927,
+   "sha256": "c56c2933b5f4816633bb865d62c554983bf83926f58a34f7c46a273aa7893a69"
+  },
+  {
+   "file": "tier2_r15_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r15_zbp22_eshop.csv",
+   "bytes": 344928,
+   "sha256": "f217b1520c827cf6a0adfb2e722a5e5a1525bd6167045c5ab5d2d1d68c155695"
+  },
+  {
+   "file": "tier2_r16_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r16_zbp22_eshop_grading.json",
+   "bytes": 343,
+   "sha256": "10667e872225b3b6fad0756c00ab69006fabe9446034e527d8b2b6be9b78f975"
+  },
+  {
+   "file": "tier2_r16_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r16_zbp22_eshop_arrays.npz",
+   "bytes": 101257,
+   "sha256": "401c2f7298b8f9d48cdbdc8cfe4476a93ffd43c61590d979920f174cf9b6e8de"
+  },
+  {
+   "file": "tier2_r16_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r16_zbp22_eshop.json",
+   "bytes": 1928,
+   "sha256": "c081bb3f92d7b2bd1025a5cded140b4dbdfdb0e1ea1d14306a0bb06b93dc9d06"
+  },
+  {
+   "file": "tier2_r16_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r16_zbp22_eshop.csv",
+   "bytes": 345078,
+   "sha256": "618f1d0d9faa085602678624d146325fd76ff2d0680046d46ea354ed017f5e54"
+  },
+  {
+   "file": "tier2_r17_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r17_zbp22_eshop_grading.json",
+   "bytes": 347,
+   "sha256": "1913a1956de471ca0ce7acd540383569ac157d62999d92d49bd65d574c86ad13"
+  },
+  {
+   "file": "tier2_r17_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r17_zbp22_eshop_arrays.npz",
+   "bytes": 101021,
+   "sha256": "bf5b96571993ee30273cd106e7b3959cdfc82ee89e790e45b17e8c0e4cd5e6e2"
+  },
+  {
+   "file": "tier2_r17_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r17_zbp22_eshop.json",
+   "bytes": 1846,
+   "sha256": "06c465b5adcce59b7b8da281185314c2719f1e98f763eedab8d6adbf23a1fc48"
+  },
+  {
+   "file": "tier2_r17_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r17_zbp22_eshop.csv",
+   "bytes": 343440,
+   "sha256": "42162fde8cba38e1046a056c1d5a135800a5d7017a6cda9d65bff72fb6c75c1d"
+  },
+  {
+   "file": "tier2_r18_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r18_zbp22_eshop_grading.json",
+   "bytes": 346,
+   "sha256": "0a31a6bc534e8b611c3eb4660d5f7cbc995656a545104c70e8d08f53b0e0d480"
+  },
+  {
+   "file": "tier2_r18_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r18_zbp22_eshop_arrays.npz",
+   "bytes": 100993,
+   "sha256": "cd2cac9bd6ff92dbad19238aec4b81d260adf71fdcf7be34fd4192225d948926"
+  },
+  {
+   "file": "tier2_r18_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r18_zbp22_eshop.json",
+   "bytes": 1844,
+   "sha256": "51f2a5d119a229d87aa28364ed9398b09ab715c49cea26035dc26d4695284396"
+  },
+  {
+   "file": "tier2_r18_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r18_zbp22_eshop.csv",
+   "bytes": 343743,
+   "sha256": "5e663feed9bde7d79748009c824c7014b6beae5514106137b861b050da8da222"
+  },
+  {
+   "file": "tier2_r19_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r19_zbp22_eshop_grading.json",
+   "bytes": 345,
+   "sha256": "6d9163c8ff09ff11f840395d6b9b6b6d33539a7062adca68b7e91c7822cccca5"
+  },
+  {
+   "file": "tier2_r19_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r19_zbp22_eshop_arrays.npz",
+   "bytes": 100728,
+   "sha256": "61530f25a47deeabfc0a67ee635bb14f1e75198adef70b01a44af5384b43c255"
+  },
+  {
+   "file": "tier2_r19_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r19_zbp22_eshop.json",
+   "bytes": 1843,
+   "sha256": "527d4f82bdbfefac3a5d78097cf1e51cb0e9646b83114c2ba1cbb3d2bb84ab3b"
+  },
+  {
+   "file": "tier2_r19_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r19_zbp22_eshop.csv",
+   "bytes": 343833,
+   "sha256": "d541cfc65e18837ea09cc9dbab4a85edfd329d2ba17eebc7330d805929ecc33c"
+  },
+  {
+   "file": "tier2_r20_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r20_zbp22_eshop_grading.json",
+   "bytes": 345,
+   "sha256": "48b035daabfa336c79431a42c823f34793b44eb1135080dd1009e8dd4ab43548"
+  },
+  {
+   "file": "tier2_r20_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r20_zbp22_eshop_arrays.npz",
+   "bytes": 101053,
+   "sha256": "bccdfa33680cb044341207cee7f9164d1278c5e87138fb2236ad47126e9f0e5a"
+  },
+  {
+   "file": "tier2_r20_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r20_zbp22_eshop.json",
+   "bytes": 1933,
+   "sha256": "8cc3f2e15f7f51c7d56f5ace790b27b4c46cfbbed17e0c589a6a0af4802195d0"
+  },
+  {
+   "file": "tier2_r20_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r20_zbp22_eshop.csv",
+   "bytes": 344031,
+   "sha256": "cb503e3df1256fb14ae3c5c53ae7cad8743e483604baf2272da8e6eb215699de"
+  },
+  {
+   "file": "tier2_r21_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r21_zbp22_eshop_grading.json",
+   "bytes": 345,
+   "sha256": "197d87360c31be00dc349c169edb562e680cf8b6ec31c92401d7dc963091d652"
+  },
+  {
+   "file": "tier2_r21_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r21_zbp22_eshop_arrays.npz",
+   "bytes": 101126,
+   "sha256": "5396f6b2ad6b81700b4a7888a905bdb2667198df1e5abe13c41e3ffe732882ea"
+  },
+  {
+   "file": "tier2_r21_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r21_zbp22_eshop.json",
+   "bytes": 1933,
+   "sha256": "8df952ff96ff8aaee0e0ced36519d89d6fbf268bf7eb68f01e5db22fc27ab633"
+  },
+  {
+   "file": "tier2_r21_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r21_zbp22_eshop.csv",
+   "bytes": 344611,
+   "sha256": "64a114c01cfca5ed5981b541d1998d67b35c87436d204bf25a9fcb4853345733"
+  },
+  {
+   "file": "tier2_r22_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r22_zbp22_eshop_grading.json",
+   "bytes": 346,
+   "sha256": "9ab7dcd3b5f684d17e85a472d00afe7344b58960a38fdd8d059306cb07f6d23d"
+  },
+  {
+   "file": "tier2_r22_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r22_zbp22_eshop_arrays.npz",
+   "bytes": 101052,
+   "sha256": "174c13bbef985ba0d134a367570ee3334eb75313af85e6cdd24d28a2ae2a7782"
+  },
+  {
+   "file": "tier2_r22_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r22_zbp22_eshop.json",
+   "bytes": 1845,
+   "sha256": "4ee6d2d13fe5e9c2b0527cbbb22318222243788a35e3aeb3896a6894ef2ce10c"
+  },
+  {
+   "file": "tier2_r22_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r22_zbp22_eshop.csv",
+   "bytes": 343743,
+   "sha256": "f36af03b1f9852c25babb83b3ad656fdb345461adce5a32b743e252ecc7cae33"
+  },
+  {
+   "file": "tier2_r23_zbp22_eshop_grading.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r23_zbp22_eshop_grading.json",
+   "bytes": 346,
+   "sha256": "610512e48af5159babb3b904bf56695a5d240ea444f2716a645fa6155d2ffcaf"
+  },
+  {
+   "file": "tier2_r23_zbp22_eshop_arrays.npz",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r23_zbp22_eshop_arrays.npz",
+   "bytes": 101283,
+   "sha256": "e04642673d1ab28146586048ac75ecb7d0b1397ab1b8028658211c230f5ec8c6"
+  },
+  {
+   "file": "tier2_r23_zbp22_eshop.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/fits/tier2_r23_zbp22_eshop.json",
+   "bytes": 1925,
+   "sha256": "446cef6c1c91e7a096d5b59dd7cae45bfe657eb2fb0aa3680276cb43be7c2f46"
+  },
+  {
+   "file": "tier2_r23_zbp22_eshop.csv",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/results/predictions/tier2_r23_zbp22_eshop.csv",
+   "bytes": 345058,
+   "sha256": "2cf13a7b7a6a0e7b4e63cfb5be594e313ff432329f096f57155ca7374b3d5a6c"
+  },
+  {
+   "file": "test_a_bayes.json",
+   "destination": "/home/hatch/workspace/papers-finish/zip-demand-model/ijec-adaptation/ecra/strengthening/results/test_a_bayes.json",
+   "bytes": 8689,
+   "sha256": "800903bb9ef602c15340c8e65247fd6707e4377def520b54af1a8e15785e489e"
+  }
+ ]
+}

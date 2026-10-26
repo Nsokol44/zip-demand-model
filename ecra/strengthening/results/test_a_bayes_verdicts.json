@@ -1,0 +1,107 @@
+{
+ "evaluation": "zbp22_eshop",
+ "draws": 24,
+ "source": "test_a_bayes.json (24 draws complete: r0-r9 server-side checkpoints, r10-r23 Nick local run, integrated 2026-10-26)",
+ "bayesian_arm": {
+  "rmse": {
+   "mean": 1.968557575653547,
+   "sd": 0.20568990709701399
+  },
+  "mae": {
+   "mean": 1.576704875891525,
+   "sd": 0.16454450694144784
+  },
+  "spearman": {
+   "mean": -0.0328619329195853,
+   "sd": 0.016911925640288122
+  },
+  "top_decile_overlap": {
+   "mean": 0.22565245976617213,
+   "sd_ddof0": 0.01620439810022094
+  },
+  "interval_behaviour_vs_observed": {
+   "mean": 0.4954766659503738,
+   "sd": 0.06515966005873618
+  },
+  "mean_width": {
+   "mean": 2.8286100178956985,
+   "sd": 0.6550389897826326
+  },
+  "converged_share": 0.25,
+  "converged_draws": [
+   0,
+   2,
+   17,
+   18,
+   19,
+   22
+  ],
+  "rmse_range": [
+   1.671058050137861,
+   2.415714807112908
+  ]
+ },
+ "econometric_arm_same_draws": {
+  "rmse_ols": {
+   "mean": 1.0097655081215906,
+   "sd": 0.008170588513927771,
+   "min": 0.9996441423343354,
+   "max": 1.0290901968595616
+  },
+  "rmse_fay_herriot": {
+   "mean": 1.0123352099730714,
+   "sd": 0.012600188640424179,
+   "min": 0.9988954282911715,
+   "max": 1.0559586626868782
+  },
+  "rmse_geoai": {
+   "mean": 0.9444973826740596,
+   "sd": 0.009385148395082291,
+   "min": 0.92678997812465,
+   "max": 0.9653313164207616
+  },
+  "fh_coverage": {
+   "mean": 0.29624737692408115,
+   "sd": 0.0649044170295337,
+   "min": 0.24619640387275243,
+   "max": 0.5869909054962436
+  },
+  "fh_mean_width": {
+   "mean": 0.8414364142789514,
+   "sd": 0.19203603879348957,
+   "min": 0.7644236748711031,
+   "max": 1.7145865511763454
+  }
+ },
+ "paired_bayes_minus_fayherriot": {
+  "rmse": {
+   "mean": 0.9562223656804757,
+   "sd_ddof0": 0.2007378495052459,
+   "min": 0.6400195282661734,
+   "max": 1.3597561444260298,
+   "bayes_worse_share": 1.0
+  },
+  "interval_behaviour": {
+   "mean": 0.19922928902629264,
+   "sd_ddof0": 0.057541429904988575,
+   "min": 0.07372998616327336,
+   "max": 0.2881992488634118,
+   "bayes_worse_share": 1.0
+  }
+ },
+ "paired_bayes_minus_geoai_rmse": {
+  "mean": 1.0240601929794875,
+  "sd_ddof0": 0.20428174337552155,
+  "min": 0.7265084659543278,
+  "max": 1.4523270841204738,
+  "bayes_worse_share": 1.0
+ },
+ "width_ratio_bayes_over_fh": {
+  "mean": 3.4035313639167923,
+  "min": 2.1343820869183237,
+  "max": 4.806147529742347
+ },
+ "Q2_verdict": "NO. The Bayesian held-out RMSE (1.969) sits far above the econometric near-tie band (OLS 1.010, Fay-Herriot 1.012); it is worse than Fay-Herriot in 24 of 24 draws (mean paired difference +0.956) and worse than GeoAI (0.944) in 24 of 24 draws (+1.024). The Tier 1 recovery advantage does not transport to the observed e-commerce outcome.",
+ "Q3_verdict": "Bayesian interval behaviour against the observed target (0.495) is higher than Fay-Herriot (0.296) in 24 of 24 draws (mean paired difference +0.199), but it is bought with width (mean 2.829 vs 0.841, about 3.4x) and remains far below the nominal 0.95. Coverage of the noisy target improves only by widening, not by calibration.",
+ "C3_status": "Not assessable. C3 requires near-tie-band performance on at least three evaluations; the Bayesian layer has been run on one of the five Tier 2 evaluations, and on that one it falls far outside the band. No transport claim is made."
+}

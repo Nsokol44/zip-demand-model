@@ -1,0 +1,117 @@
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 305 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 402 seconds.
+[fit] tier2_r0_zbp22_eshop: 437s Rhat=1.006 ESS=412
+[bayes eshop] r0: rmse=1.750 beh=0.439 runtime=437s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 424 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 681 seconds.
+[fit] tier2_r1_zbp22_eshop: 722s Rhat=1.026 ESS=118
+[bayes eshop] r1: rmse=2.416 beh=0.521 runtime=722s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 412 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 622 seconds.
+[fit] tier2_r2_zbp22_eshop: 689s Rhat=1.004 ESS=469
+[bayes eshop] r2: rmse=1.671 beh=0.469 runtime=689s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 419 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 492 seconds.
+[fit] tier2_r3_zbp22_eshop: 533s Rhat=1.175 ESS=18
+[bayes eshop] r3: rmse=2.113 beh=0.584 runtime=533s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 467 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 511 seconds.
+[fit] tier2_r4_zbp22_eshop: 540s Rhat=1.033 ESS=90
+[bayes eshop] r4: rmse=2.246 beh=0.667 runtime=540s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 254 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 382 seconds.
+[fit] tier2_r5_zbp22_eshop: 416s Rhat=1.023 ESS=148
+[bayes eshop] r5: rmse=2.066 beh=0.475 runtime=416s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 379 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 512 seconds.
+[fit] tier2_r6_zbp22_eshop: 570s Rhat=1.036 ESS=111
+[bayes eshop] r6: rmse=2.156 beh=0.486 runtime=570s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 341 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 526 seconds.
+[fit] tier2_r7_zbp22_eshop: 569s Rhat=1.030 ESS=84
+[bayes eshop] r7: rmse=1.870 beh=0.588 runtime=569s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 407 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 572 seconds.
+[fit] tier2_r8_zbp22_eshop: 612s Rhat=1.045 ESS=116
+[bayes eshop] r8: rmse=2.312 beh=0.526 runtime=612s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 232 seconds.
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+Sampling 4 chains for 2_000 tune and 1_000 draw iterations (8_000 + 4_000 draws total) took 335 seconds.
+[fit] tier2_r9_zbp22_eshop: 363s Rhat=1.011 ESS=317
+[bayes eshop] r9: rmse=1.788 beh=0.488 runtime=363s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
+--- RESTART 2026-10-26 after service-restart kill; draws r0-r9 checkpointed, resuming ---
+[bayes eshop] r0: rmse=1.750 beh=0.439 runtime=437s
+[bayes eshop] r1: rmse=2.416 beh=0.521 runtime=722s
+[bayes eshop] r2: rmse=1.671 beh=0.469 runtime=689s
+[bayes eshop] r3: rmse=2.113 beh=0.584 runtime=533s
+[bayes eshop] r4: rmse=2.246 beh=0.667 runtime=540s
+[bayes eshop] r5: rmse=2.066 beh=0.475 runtime=416s
+[bayes eshop] r6: rmse=2.156 beh=0.486 runtime=570s
+[bayes eshop] r7: rmse=1.870 beh=0.588 runtime=569s
+[bayes eshop] r8: rmse=2.312 beh=0.526 runtime=612s
+[bayes eshop] r9: rmse=1.788 beh=0.488 runtime=363s
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 2 jobs)
+NUTS: [alpha, beta, log_size, sigma_b, phi, z_u, v]
